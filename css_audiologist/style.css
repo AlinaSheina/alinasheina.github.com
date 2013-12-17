@@ -1,0 +1,252 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: verdana;
+}
+
+h1{
+	font-size: 18px;
+	color: #5d5d5d;
+}
+
+.menu {
+	height: 36px;
+	outline: 1px solid #000000;
+	padding-top: 2px;
+	margin: 0;
+	vertical-align: bottom;
+}
+
+.menu2{
+	height: 34px;
+	background-color: #969e34;
+}
+
+.ul {
+	width: 946px;
+	height: 34px;
+	margin: 0 auto 0 auto;
+	font-size: 18px;
+	list-style-type: none;
+}
+
+.ul li {
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	line-height: 34px;
+}
+
+.ul li:hover {
+	background-color: #000000;
+	color: ffffff;
+	cursor: pointer;
+}
+
+.ul2 {
+	font-size: 18px;
+	list-style-type: none;
+	padding: 0;
+	width: 255px;
+}
+
+.ul2 li{
+	color: #3d3d3d;
+	border-bottom: 1px solid #000000;
+	line-height: 40px;
+}
+
+.wrapper {
+	width: 1100px;
+	padding: 0;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.header {
+	width: 946px;
+	height: 106px;
+	margin: 26px auto 0 auto;
+	padding-bottom: 13px;
+	background-image: url(../images_audiologist/header.jpg);
+	background-repeat: no-repeat;
+	text-align: right;
+	font-size: 16px;
+	line-height: 12px;
+}
+
+.request{
+	text-align: center;
+	font-size: 14px;
+	float: left;
+	width: 230px;
+	height: 32px;
+	background-color: #000000;
+	color: ffffff;
+	line-height: 32px;
+	margin-left: 440px;
+}
+
+.request:hover {
+	background-color:#3d3d3d;
+	cursor: pointer;
+}
+
+.img {
+	float: left;
+	margin-left: 10px;
+}
+
+.content {
+	width: 635px;
+	margin-left: 76px;
+	font-size: 14px;
+	color: #3d3d3d;
+	float: left;
+	padding-bottom: 32767px;
+	margin-bottom: -32767px;
+}
+
+.sidebar {
+	width: 295px;
+	margin-left: 720px ;
+	padding-left: 20px;
+}
+
+a:link{
+	color:#3d3d3d;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#3d3d3d;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#969e34;
+	text-decoration:none;
+}
+
+a:active{
+	color:#969e34;
+	text-decoration:none;
+}
+
+form {
+	width: 300px;
+	margin-left: 720px ;
+	padding-left: 20px;
+	margin-top: 50px;
+}
+
+.form input, .form  textarea  {
+	width: 243px;
+	background:#fff; 
+	color:#000; 
+	border:1px solid #aaa;
+	border-radius:3px; 
+	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;
+	padding:3px;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+.form input:focus, .form textarea:focus {
+	border: 1px solid #969e34; 
+}
+
+.form .sendbutton {
+	height: 25px;
+	width: 111px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	color: white;
+	background: black;
+	font-size: 14px;
+	border-radius:3px; 
+}
+
+.sendbutton:hover {
+	color: black;
+	background: #969e34;
+	cursor: pointer;
+}
+
+.footer {
+	height: 177px;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #3e3e3e;
+	padding-top: 18px;
+	margin-top: 100px;
+}
+
+.img2 {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+h2 {
+	color: #969e34;
+	font-size: 16px;
+}
+
+.info-box1 {
+	font-size: 11px;
+	float:left; 
+	margin:5px 10px 0 110px;
+	width: 270px;
+	height: 120px;
+}
+
+.site-info {
+	clear: both;
+	overflow: visible;
+	list-style-type: none;
+	padding: 40px 0 0 0;
+}
+
+.info-box2 {
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	margin:5px 10px 0 0;
+}
+
+.info-box2 h2 {
+	margin: 0 0 20px 0;
+}
+
+.info-box2 li:hover {
+	border-bottom: white 1px solid;
+	cursor: pointer;
+}
+
+.info-box3 li:hover {
+	border-bottom: white 1px solid;
+	cursor: pointer;
+}
+
+.info-box3 {
+	float:left; 
+	margin: 44px 50px 0 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+.info-box4 {
+	float:left; 
+	margin: 5px 110px 0 0;
+	list-style-type: none;
+	padding: 0;
+}
+
+.info-box4 h2 {
+	margin: 0 0 20px 0;
+}
