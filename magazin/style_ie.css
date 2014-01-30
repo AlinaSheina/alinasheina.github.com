@@ -1,0 +1,37 @@
+.ie_nav {
+padding-top: 104px;
+height: 40px;
+font-size: 13px;
+}
+
+.ie_nav ul{
+list-style-type: none;
+padding-left: 0;
+box-shadow: 4px 5px 5px hsla(0,0%,0%,0.2);
+}
+
+.ie_nav li {
+float: left;
+padding-right: 12px;
+}
+
+.innovations {
+max-width: 760px;
+}
+			
+.active img {
+width: 20%;
+}
+
+.all_goods {
+margin-top: 57px;
+height: 255px;
+}
+
+.brand_wrap {
+width: 95%;
+}
+
+.img-brand {
+width: 10.5%;
+}
