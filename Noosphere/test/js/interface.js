@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     var width = $('.slider img').width();
     function carousel(){
         $('.slider').delay(1000).animate({right: '+=' + width},1000, function(){
