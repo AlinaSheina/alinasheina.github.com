@@ -1,0 +1,40 @@
+nav {
+	height: none;
+}
+.ie_nav {
+height: 40px;
+font-size: 13px;
+width: 100%;
+}
+
+.ie_nav ul{
+list-style-type: none;
+padding-left: 0;
+box-shadow: 4px 5px 5px hsla(0,0%,0%,0.2);
+}
+
+.ie_nav li {
+float: left;
+padding-right: 12px;
+}
+.innovations {
+max-width: 760px;
+}
+
+.left img, .right img {
+	width: 23px;
+}
+.all_goods .style-button {
+background-position: right center;
+}
+.brand LI {
+	float: left;
+	width: 12%;
+}
+.brand_wrap {
+width: 95%;
+}
+
+.img-brand {
+width: 10.5%;
+}
