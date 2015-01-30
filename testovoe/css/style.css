@@ -424,6 +424,7 @@ menu .menu-links .menu-links-item a:hover {
   height: 200px;
   box-sizing: border-box;
   margin-top: 25px;
+  overflow:hidden;
 }
 .reviews-wrap .touchslider-item .review-text {
   display: block;
