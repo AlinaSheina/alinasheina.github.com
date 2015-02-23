@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>avalfx</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-4 login-block">
+                    <a href="#" class="registr enter-btn" data-content="register">Register</a> 
+                    <div id="register" class="enter-dropdown registr-dropdown dropdown-decor">
+                        <span>Please fill out the following fields to sign up:</span>
+                        <div class="line-field">
+                            <label>Login</label>
+                            <input type="text">
+                            <span class="input-hint">max 32 symbols</span>
+                        </div>     
+                        <div class="line-field">
+                            <label>Password</label>
+                            <input type="text">
+                            <span class="input-hint">min. 6, max 32 symbols</span>
+                        </div> 
+                        <div class="line-field">
+                            <label>Email</label>
+                            <input type="text">
+                            <span class="input-hint">You will receive a confirmation</span>
+                        </div> 
+                        <div class="line-field phone">
+                            <label>Phone</label>
+                            +<input type="text" class="phone-code-country" placeholder="380">
+                            <input type="text" class="phone-code" placeholder="98">
+                            <input type="text" class="phone-number" placeholder="8886493">
+                        </div>        
+                        <a href="#" class="sign-up-btn">Sign Up</a>           
+                        <i class="close-btn"></i>
+                    </div>
+                    <span class="separator-style">or</span>
+                    <a href="#" class="login enter-btn" data-content="login">Login</a>
+                    <div id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                        <span>Please fill out the following fields to log in:</span>
+                        <div class="line-field">
+                            <label>Login</label>
+                            <input type="text">
+                        </div>     
+                        <div class="line-field line-field-margin">
+                            <label>Password</label>
+                            <input type="text">
+                        </div>        
+                        <div class="checkbox clearfix">
+                            <input type="checkbox" id="login-checkbox" />
+                            <label for="login-checkbox"><span></span>Remember Me</label>                       
+                        </div>
+                        <a href="#" class="sign-up-btn">Log In</a>       
+                        <a href="#" class="forgot-pass">Forgot Password</a>    
+                        <i class="close-btn"></i>
+                    </div>
+                </div>
+                <div class="col-md-4 center">
+                    <img src="img/logo.png" alt="logo" /><br/>
+                    <span class="text-info">Forex Ratings of all Kind</span>
+                </div>
+                <div class="col-md-4 search-leng-wrap">
+                    <div class="search header-srch">
+                        <input type="text">
+                        <a href="#" class="header-srch-btn"><img src="img/search.png" alt="search"/></a>
+                    </div>
+                    <div id="now-leng" class="leng show-dropd">
+                        en                        
+                    </div>
+                    <ul class="change-leng dropdown-decor dropd" data-content="now-leng">
+                        <li class="clearfix select hidden">
+                            <a href="#">
+                                <i class="flag flag-us"></i>
+                                <span> en</span> 
+                            </a>
+                        </li>
+                        <li class="clearfix select">
+                            <a href="#">
+                                <i class="flag flag-ru"></i>
+                                <span> ru</span> 
+                            </a>
+                        </li>
+                        <li class="clearfix select">
+                            <a href="#">
+                                <i class="flag flag-es"></i>
+                                <span> es</span> 
+                            </a>
+                        </li>
+                        <li class="clearfix select">
+                            <a href="#">
+                                <i class="flag flag-it"></i>
+                                <span> it</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="wrap-width">
+                    <ul class="menu clearfix">
+                        <li class="menu-item menu-active" data-content="forex-brokers" >
+                            Forex Brokers         
+                        </li>     
+                        <li class="menu-item" data-content="forex-books">
+                            Forex Books                                   
+                        </li>   
+                        <li class="menu-item" data-content="forex-tools">
+                            Forex Tools                                     
+                        </li>   
+                        <li class="menu-item" data-content="forex-articles">
+                            Forex Articles                                 
+                        </li>   
+                    </ul> 
+                </div>               
+                <div class="submenu-wrap">
+                    <div class="wrap-width">
+                        <ul id="forex-brokers" class="submenu submenu-show clearfix">
+                            <li class="sub-menu-item menu-active">
+                                PayPal
+                            </li>
+                            <li class="sub-menu-item">
+                                WebMoney
+                            </li>
+                            <li class="sub-menu-item">
+                                MT4
+                            </li>
+                            <li class="sub-menu-item">
+                                MT5
+                            </li>
+                            <li class="sub-menu-item">
+                                ECN
+                            </li>
+                        </ul>
+                        <ul id="forex-books" class="submenu clearfix">
+                            <li class="sub-menu-item">
+                                Forex Books1
+                            </li>
+                            <li class="sub-menu-item">
+                                Forex Books2
+                            </li>
+                        </ul>
+                        <ul id="forex-tools" class="submenu clearfix">
+                            <li class="sub-menu-item">
+                                Forex Tools1
+                            </li>
+                            <li class="sub-menu-item">
+                                Forex Tools2
+                            </li>
+                        </ul>
+                        <ul id="forex-articles" class="submenu clearfix">
+                            <li class="sub-menu-item">
+                                Forex Articles1
+                            </li>
+                            <li class="sub-menu-item">
+                                Forex Articles2
+                            </li>
+                        </ul>
+                    </div>                  
+                </div>
+            </div>        
+        </header>
+        <section class="content clearfix">
+            <div class="wrap-width">                
+                <article>
+                    <img class="center banner" src="img/banner-728x90.png" alt="banner" />
+                </article>
+                <article>
+                    <h1>PayPal Forex Brokers</h1>
+                    <div class="search-wrap clearfix">
+                        <span class="search-text">A list of Forex brokers that support PayPal payment system as an option for funds deposit/withdrawal. PayPal is a convenient on-line payment system that is widely accepted in the USA, Canada and the United Kingdom. Forex brokers that accept PayPal deposits often are good-standing companies, wich youA list of<span class="show-more">Show more</span> Forex brokers that support PayPal payment system as an option for funds deposit/withdrawal. PayPal is a convenient on-line payment system that is widely accepted in the USA, Canada and the United Kingdom. Forex brokers that accept PayPal deposits often are good-standing companies, wich youA list of Forex brokers that support PayPal payment system as an option for funds deposit/withdrawal. PayPal is a convenient on-line payment system that is widely accepted in the USA, Canada and the United Kingdom. Forex brokers that accept PayPal deposits often are good-standing companies, wich you</span>
+                        <div class="search">
+                            <input type="text">
+                            <a href="#" class="search-btn">Search</a>
+                        </div>
+                        <a class="advanced-srch" href="#">Advanced Search</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="row-field clearfix">
+                        <div class="col-md-3 small-banner">
+                            <img class="center banner" src="img/banner-115x115.png" alt="banner" />
+                            <img class="center banner" src="img/banner-115x115.png" alt="banner" />
+                            <img class="center banner" src="img/banner-115x115.png" alt="banner" />
+                        </div>
+                        <div class="col-md-9">
+                            <div class="filter-menu">
+                                <span>Sort by: </span>
+                                <div class="filter-menu-style">
+                                    <div id="now-sort-by" class="show-dropd">Min. Account Size</div>
+                                    <ul class="dropdown-decor sort-dropd dropd" data-content="now-sort-by">
+                                        <li class="select hidden"><span>Min. Account Size</span></li>
+                                        <li class="select"><span>Name</span></li>
+                                        <li class="select"><span>Rating</span></li>
+                                        <li class="select"><span>Max. Leverage</span></li>
+                                    </ul>
+                                </div>                         
+                                <span class="showing-dropd-title">Showing: </span>
+                                <div class="filter-menu-style">
+                                    <div id="now-showing" class="show-dropd">First</div>
+                                    <ul class="dropdown-decor showing-dropd dropd" data-content="now-showing">
+                                        <li class="select hidden"><span>First</span></li>
+                                        <li class="select"><span>Last</span></li>
+                                        <li class="select"><span>All</span></li>
+                                    </ul>
+                                </div>  
+                                <div class="filter-menu-style">
+                                    <div id="now-showing-number" class="show-dropd">10</div>
+                                    <ul class="dropdown-decor number-dropd dropd" data-content="now-showing-number">
+                                        <li class="select hidden"><span>10</span></li>
+                                        <li class="select"><span>20</span></li>
+                                        <li class="select"><span>50</span></li>
+                                    </ul>
+                                </div>      
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                    <tr class="column-name">
+                                        <td width="90" class="number">#</td>
+                                        <td width="200">Forex Broker</td>
+                                        <td width="110">Broker Rating</td>
+                                        <td width="105">Min. Acc. Size</td>
+                                        <td width="115">Max. Leverage</td>
+                                        <td>Payment</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">1</td>
+                                        <td class="broker">FxGlory</td>
+                                        <td>6.1</td>
+                                        <td>$1</td>
+                                        <td>1:3000</td>
+                                        <td>
+                                            <i class="icon icon4"></i>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">2</td>
+                                        <td class="broker">OANDA</td>
+                                        <td>6.4</td>
+                                        <td>$1</td>
+                                        <td>1:50</td>
+                                        <td>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">3</td>
+                                        <td class="broker">XTB<span>ex-X-Trade Blockers</span></td>
+                                        <td>-</td>
+                                        <td>$1</td>
+                                        <td>1:200</td>
+                                        <td>
+                                            <i class="icon icon4"></i>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">4</td>
+                                        <td class="broker">Profiforex<br/></td>
+                                        <td>7.0</td>
+                                        <td>$1</td>
+                                        <td>1:500</td>
+                                        <td>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">5</td>
+                                        <td class="broker">Forex-Market</td>
+                                        <td>8.1</td>
+                                        <td>$1</td>
+                                        <td>1:1000</td>
+                                        <td>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">6</td>
+                                        <td class="broker">FreshForex</td>
+                                        <td>4.7</td>
+                                        <td>$1.40</td>
+                                        <td>1:500</td>
+                                        <td>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">7</td>
+                                        <td class="broker">GAINSY</td>
+                                        <td>7.4</td>
+                                        <td>$10</td>
+                                        <td>1:1000</td>
+                                        <td><i class="icon icon4"></i>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">8</td>
+                                        <td class="broker">Real Trade</td>
+                                        <td>1.0</td>
+                                        <td>$20</td>
+                                        <td>1:1000</td>
+                                        <td>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">9</td>
+                                        <td class="broker">SABrokers</td>
+                                        <td>-</td>
+                                        <td>$25</td>
+                                        <td>1:100</td>
+                                        <td>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">10 </td>
+                                        <td class="broker">eToro</td>
+                                        <td>1.5</td>
+                                        <td>$50</td>
+                                        <td>1:400</td>
+                                        <td><i class="icon icon4"></i>
+                                            <i class="icon icon3"></i>
+                                            <i class="icon icon5"></i>
+                                            <i class="icon icon2"></i>
+                                            <i class="icon icon1"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <img class="center banner" src="img/banner-728x90.png" alt="banner" />
+                </article>
+            </div>
+        </section>  
+    </div>
+	
+	<footer class="clearfix">
+        <div class="wrap-width row-field">
+            <div class="col-md-3 padding-correct">
+               <img class="f-logo" src="img/logo.png" alt="logo" /><br/>
+               <span class="f-rights-text">avalfx.com © 2015<br/>
+                All Rights Reserved</span>
+            </div>           
+           <div class="col-md-9">
+               <ul class="f-steps-link clearfix">
+                   <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+                   <li><a href="#">Forex Brokers</a>&ensp;&rarr;&ensp;</li>
+                   <li><a href="#">PayPal Forex Brokers</a></li>
+               </ul>
+               <ul class="f-inform-link clearfix">
+                   <li><a href="#">Contact Us</a></li>
+                   <li><a href="#">Risk of Loss</a></li>
+                   <li><a href="#">Terms and Conditions</a></li>
+               </ul>
+           </div>
+        </div>        
+	</footer>
+</body>
+</html>
+
