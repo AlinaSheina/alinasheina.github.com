@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+<script src="bower_components/platform/platform.js"></script>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<link href="scaffold.html" rel="import">
+<link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
+<link href="bower_components/paper-fab/paper-fab.html" rel="import">
+
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <style>
+        template {display: none !important;} /* injected by platform.js */
+        body {transition: opacity ease-in 0.2s; } 
+        body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+        body {
+        font-family: RobotoDraft, sans-serif;
+        color: #333;
+        margin: 0;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+      }
+      sampler-scaffold {
+        height: 100%;
+      }
+      core-item {
+        cursor: pointer !important;
+      }
+    </style>
+</head>
+	<body fullbleed unresolved touch-action="auto">
+		123
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link href="bower_components/paper-ripple/paper-ripple.html" rel="import">
+<link href="bower_components/paper-fab/paper-fab.html" rel="import">
+<link href="bower_components/core-icon-button/core-icon-button.html" rel="import">
+<link href="bower_components/core-media-query/core-media-query.html" rel="import">
+<polymer-element name="color-cards">
+  <template>
+    <style>
+      :host {
+        display: block;
+        float: left;
+        font-size: 18px;
+        padding: 3px;
+        width: calc(100%/6);
+        height: calc(100%/3);
+        position: relative;
+        box-sizing: border-box;
+      }
+      :host ::content h3 {
+        margin: 0;
+        text-decoration: underline;
+      }
+      :host(.bg-blue) .main-card {
+        background: #3970df;
+      }
+      polyfill-next-selector { content: '.main-card p'; }
+      polyfill-next-selector { content: '.main-card img'; }
+      .main-card ::content img {
+        width: 170px;
+        max-width: 100%;
+        max-height: 100%;
+      }    
+      .main-card {   
+        border-bottom: none;
+        display: table;    
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 15px 15px 30px 15px;
+      }
+      .main-card:hover {
+        box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+      }
+
+      :host .text-wrap {
+        position: absolute;
+        height: 30px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 15px;
+        background: #3059c1;
+        box-sizing: border-box;
+      }
+      :host ::content p {    	
+        color: #fff;
+        font-size: 14px;
+        margin: 0;
+        line-height: 30px;
+      }
+      .img-wrap {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      core-icon-button {
+        position: absolute;
+        bottom: 0px;
+        padding: 0;
+        right: 0;
+        color: #fff;
+      }
+      core-icon-button:hover {
+        box-shadow: none !important;
+      }
+    </style>
+    <div class="main-card">
+      <div class="img-wrap">
+        <content select="img"></content>
+      </div>
+      <div class="text-wrap">
+        <content select="p"></content>
+        <core-icon-button icon="open-in-new"></core-icon-button>
+      </div> 
+    </div>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>

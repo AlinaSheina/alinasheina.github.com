@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Broker profile</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/star-rating.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>	   
+    <script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <script type="text/javascript" src="js/star-rating.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix"> 
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="brokers-profile-cont">
+                    <div class="brokers-info-block bg-dark-blue shadow clearfix">
+                        <div class="broker-logo">
+                            <div class="logo-img-wrap">
+                                <img src="img/broker-logo-b.png" alt="broker-logo" title="broker-logo">
+                            </div>
+                        </div>
+                        <div class="payment-info">
+                            <h1>FxGlory</h1>
+                            <p class="text-info">“Fxglory is a worldwide online broker founded in 2011 and now is among the largest and most respected companies in the world of the Forex market. Our company has succeeded and grown by listening to the clients and meeting their needs. Since our foundation, a team of professionals has been formed who are specialists in the </p>
+                            <a href="#" class="show-more"> Visit official website</a>
+                        </div>
+                    </div>
+                    <div class="detail-info-block clearfix">
+                        <div class="company-info-block shadow all-border-radius bg-light-grey">
+                            <div class="options all-border-radius clearfix">
+                                <a href="#" class="edit-w"></a>
+                                <a href="#" class="delete-w"></a>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Company Name:</div>
+                                <div class="line-info">FxGlory LTD</div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Foundation:</div>
+                                <div class="line-info">2011</div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Online since:</div>
+                                <div class="line-info">2012</div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Office locations:</div>
+                                <div class="line-info">Bulgaria, Georgia</div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Demo platforms:</div>
+                                <div class="line-info">MetaTrader 4<br>
+                                    <i>(Limited with 30 days of inactivity)</i>,<br>
+                                    MetaTrader 5, PayPal, WebMoney, ECN
+                                </div>
+                                <div class="show-more show-dropd-click">
+                                    <span class="click-btn">Show all</span>
+                                    <ul class="dropdown-decor2 dropd">
+                                        <li class="clearfix">
+                                            <span>MT4</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>MT5</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>WebMoney</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Regulated by:</div>
+                                <div class="line-info">National Bank of Georgia, N2-06/3625-12</div>
+                                <div class="show-more show-dropd-click">
+                                    <span class="click-btn">Show all</span>
+                                    <ul class="dropdown-decor2 dropd">
+                                        <li class="clearfix">
+                                            <span>CRFIN (Russian Federation)</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AFM (Netherlands)</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>ASIC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Account currencies:</div>
+                                <div class="line-info">USD |</div>
+                                <div class="currency-pairs show-dropd-click">
+                                    <span class="click-btn">Currency pairs</span>
+                                    <ul class="dropdown-decor2 dropd">
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>AUD/CAD</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="line-text clearfix">
+                                <div class="line-name">Payment options:</div>
+                                <div class="line-info">Credit/Debit Cards, Neteller, FasaPay, WebMoney, Paypal, Skrill, </div>
+                                <div class="show-more show-dropd-click">
+                                    <span class="click-btn">Show all</span>
+                                    <ul class="dropdown-decor2 dropd">
+                                        <li class="clearfix">
+                                            <span>MT4</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>MT5</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span>WebMoney</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="broker-rating-block shadow all-border-radius bg-orange">
+                            <div class="icon-style star"></div>                       
+                            <span class="subtitle-style">Broker rating</span><br>
+                            <span class="italic">Based on 24 reviews</span><br>
+                            <span class="rating"><span class="rating-style">8.0</span>/10</span>
+                        </div>
+                        <div class="contract-specific-block shadow all-border-radius bg-orange">
+                            <span class="subtitle-style">Broker accounts</span><br>
+                            <div class="btn-wrap clearfix">
+                                <span class="btn-lable">— Demo</span><a href="#" class="btn-style">Open</a>
+                            </div>
+                            <div class="btn-wrap clearfix">
+                                <span class="btn-lable">— Real</span><a href="#" class="btn-style">Open</a>
+                            </div>                    
+                            <a href="#" class="specific">Contract Specifications</a>
+                        </div>
+                    </div>                
+                    <div class="secondary-info clearfix">
+                        <div class="secondary-info-tabs-wrap shadow">
+                            <div class="secondary-info-tabs bg-light clearfix">
+                               <a href="#" class="account-types tabs">
+                                    <span>Account Types</span>
+                                </a>
+                                <a href="#" class="additional-information tabs active bg-dark-blue">
+                                    <span>Broker Information</span>
+                                </a> 
+                            </div>
+                            <div class="secondary-info-tabs-dropd">
+                                <div class="account-types-dropd tab-hide scroll-block tab-content bg-light clearfix">
+                                    <a href="#" class="active-link">ECN</a>
+                                    <div class="scroll-view-item">
+                                        <div class="left"></div>
+                                        <div class="view-item-viewport">                            
+                                            <ul class="view-item-wrap clearfix">
+                                                <li class="hidden"><a href="#"><span>ECN</span></a></li>                                
+                                                <li><a href="#"><span>Standart</span></a></li>
+                                                <li><a href="#"><span>Bronze</span></a></li>
+                                                <li><a href="#"><span>Silver</span></a></li>
+                                                <li><a href="#"><span>Gold</span></a></li>
+                                                <li><a href="#"><span>VIP</span></a></li>
+                                            </ul>                           
+                                        </div> 
+                                        <div class="right"></div>
+                                    </div>                                                                     
+                                </div>
+                                <div class="secondary-info-block tab-content bg-line clearfix">
+                                    <div class="info-line clearfix">
+                                        <div class="line-name">Website languages:</div>
+                                        <div class="line-value">English, Russian</div>
+                                    </div>
+                                    <div class="info-line clearfix">
+                                        <div class="line-name">Support languages:</div>
+                                        <div class="line-value">English, Russian, Armenian</div>
+                                    </div>
+                                    <div class="info-line clearfix">
+                                        <div class="line-name">Support methods:</div>
+                                        <div class="line-value">Callback, Phone, Skype, </div>
+                                    </div>
+                                    <div class="info-line clearfix">
+                                        <div class="line-name">Trading server time zone:</div>
+                                        <div class="line-value">GMT+3</div>
+                                    </div>
+                                    <div class="info-line clearfix">
+                                        <div class="line-name">VPS for traders:</div>
+                                        <div class="line-value">Free for deposits greater than $500</div>
+                                    </div>
+                                    <span class="subtitle-style center">Conditions for VIP traders</span>
+                                    <div class="conditions-block additional-info-block all-border-radius bg-light">
+                                        <ul>
+                                            <li>Personal manager for real account holders</li>
+                                            <li>Reduced spread between 0.5-1.5 pips</li>
+                                            <li>Special signals</li>
+                                            <li>Accruing 9-25% annual interest on Free Margin</li>
+                                            <li>Assistance via phone call anytime</li>
+                                            <li>Some learning method that clients request from broker</li>
+                                            <li>Managed account with low commission for broker</li>
+                                        </ul>
+                                    </div>
+                                    <span class="subtitle-style center">Also available</span>
+                                    <div class="additional-info-block all-border-radius bg-dark">
+                                        <ul>
+                                            <li>Hedging</li>
+                                            <li>Trailing stop</li>
+                                            <li>Pending orders</li>
+                                            <li>One-click trading</li>
+                                            <li>Mobile trading</li>
+                                            <li>Browser-based platform</li>
+                                            <li>Automated trading</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-types-block secondary-info-block shadow all-border-radius bg-light">
+                            <div class="info-line clearfix">
+                                <div class="line-name">Minimum account size:</div>
+                                <div class="line-value">$1</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Minimum position size:</div>
+                                <div class="line-value">0.01 lot</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Spread type:</div>
+                                <div class="line-value">Fixed</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Spread on EUR/USD, pips:</div>
+                                <div class="line-value">2</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Scalping:</div>
+                                <div class="line-value"><div class="check"></div></div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Expert advisors:</div>
+                                <div class="line-value"><div class="check"></div></div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name trading-instruments show-dropd-click">
+                                    <span class="click-btn">Trading instruments</span>
+                                    <div class="trading-instruments-dropd dropdown-decor2 dropd">
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Forex</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Gold & Silver</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">CFD</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Oil</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Stocks</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Energies</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                        <div class="line-field clearfix">
+                                            <div class="field-title">Bonds</div>
+                                            <div class="field-value">1:3000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Trading platforms:</div>
+                                <div class="line-value">MetaTrader 4, WebTrader</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Digits after the dot in quotes:</div>
+                                <div class="line-value">5</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Margin call level:</div>
+                                <div class="line-value">50%</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Stop-out level:</div>
+                                <div class="line-value">30%</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Minimum distance to stop/limit orders, pips:</div>
+                                <div class="line-value">2</div>
+                            </div>
+                            <div class="info-line clearfix">
+                                <div class="line-name">Number of currency pairs:</div>
+                                <div class="line-value">34</div>
+                            </div>
+                            <span class="subtitle-style center">Also available</span>
+                            <div class="additional-info-block all-border-radius bg-dark">
+                                <ul>
+                                    <li>Hedging</li>
+                                    <li>Trailing stop</li>
+                                    <li>Pending orders</li>
+                                    <li>One-click trading</li>
+                                    <li>Mobile trading</li>
+                                    <li>Browser-based platform</li>
+                                    <li>Automated trading</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="review-block">
+                        <div class="clearfix">
+                            <div id="review-stat-block" class="review-status shadow all-border-radius bg-orange clearfix">
+                                <div class="icon-style diagram"></div>
+                                <span class="subtitle-style">Review statistics</span>
+                                <ul class="status-list clearfix">
+                                    <li class="active-link"><div class="icon-style positive"></div><a href="#">Positive:</a><span> 18</span></li>
+                                    <li><div class="icon-style neutral"></div><a href="#">Neutral:</a><span> 28</span></li>
+                                    <li><div class="icon-style negative"></div><a href="#">Negative:</a><span> 15</span></li>
+                                    <li><div class="icon-style total"></div><a href="#">Total reviews:</a><span> 51</span></li>
+                                </ul>
+                                <form>
+                                   <div class="filter-by">
+                                        <div class="filter-row clearfix">
+                                            <span class="showing-dropd-title">Show</span>
+                                            <div class="select-list">
+                                               <select>
+                                                    <option>earliest</option>
+                                                    <option selected>latest</option>
+                                                </select> 
+                                            </div>
+                                        </div>
+                                        <div class="filter-row clearfix">
+                                            <div class="select-list">
+                                                <select>
+                                                    <option selected>10</option>
+                                                    <option>30</option>
+                                                    <option>60</option>
+                                                    <option>100</option>
+                                                </select>                                        
+                                            </div>
+                                            <span>reviews</span>
+                                        </div>                            
+                                    </div>
+                                    <div class="update-btn-wrap">
+                                        <button class="btn-style center">UPDATE</button>
+                                    </div> 
+                                </form>                                
+                            </div> 
+                        </div>                    
+                        <div class="comment shadow all-border-radius clearfix">
+                            <div class="coment-header bg-light">
+                                <div class="comment-raiting">
+                                    <span>4,5</span>
+                                    <div class="icon-style star-black"></div>
+                                </div>                           
+                                <div class="clearfix">
+                                   <span class="user-name">Nathan L.</span>
+                                </div>
+                                <span class="location-name">Toronto, Canada;</span>
+                                <span class="user-id">Account #4XXX2</span>                            
+                            </div>
+                            <div class="coment-body bg-light">                            
+                                <p>What I liked most in this broker is the leverage they provide. i did not see any other broker that provides 1:3000 leverage however it can be dangerous but it was profitable for me.</p>
+                                <span class="comment-date">Written today</span>
+                            </div>
+                        </div>
+                        <div class="comment shadow all-border-radius clearfix">
+                            <div class="coment-header bg-light">
+                                <div class="comment-raiting">
+                                    <span>4</span>
+                                    <div class="icon-style star-black"></div>
+                                </div>                           
+                                <div class="clearfix">
+                                   <span class="user-name">Nathan L.</span>
+                                </div>
+                                <span class="location-name">Toronto, Canada;</span>
+                                <span class="user-id">Account #4XXX2</span>                            
+                            </div>
+                            <div class="coment-body bg-light">                            
+                                <p>What I liked most in this broker is the leverage they provide. i did not see any other broker that provides 1:3000 leverage however it can be dangerous but it was profitable for me.</p>
+                                <span class="comment-date">Written today</span>
+                            </div>
+                        </div>
+                        <div class="load-reviews center">
+                            <a href="#">Load more reviews</a>
+                            <a href="#review-stat-block">FILTERS</a>
+                        </div>                        
+                        <form class="write-review-block shadow all-border-radius bg-line">
+                            <div class="parameter-wrap clearfix">
+                                <!-- <div class="line-field nesessary clearfix">
+                                    <label for="user-name">Name:</label>
+                                    <div class="input-style-wrap2">
+                                        <input id="user-name" type="text">
+                                        <div class="help-block">error</div>
+                                    </div>
+                                    <span class="necessary">*</span>
+                                </div>
+                                <div class="line-field nesessary clearfix">
+                                    <label for="user-email">Email:</label>
+                                    <div class="input-style-wrap2">
+                                        <input id="user-email" type="email">
+                                        <span class="text-hint">will not be published</span>
+                                        <div class="help-block">error</div>
+                                    </div>
+                                    <span class="necessary">*</span>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label>Country:</label>
+                                    <div class="select-list">
+                                        <select>
+                                            <option selected>South Georgia and the...</option>
+                                            <option>Ukraine</option>
+                                            <option>United States of America</option>
+                                            <option>Uruguai</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="line-field clearfix">
+                                    <label for="user-number">Acc. Number:</label>
+                                    <div class="input-style-wrap2">
+                                        <input id="user-number" type="text">
+                                        <span class="text-hint">Only first and last digit will be published</span>
+                                        <div class="help-block">error</div>
+                                    </div>
+                                </div>-->
+                                <div class="line-field clearfix">
+                                    <span class="roboto-b">Write a review</span>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <div class="write-article-hint all-border-radius">
+                                        To submit Forex review to our site fill the form below. Your review will be reviewed and published in this Forex broker web page.
+                                    </div>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label>Your rate:</label>
+                                    <div class="raiting-stars-wrap">
+                                        <input id="input-id" type="number" class="rating rating-fa" min=0 max=5 step=0.5 data-size="md" data-symbol="☆">  
+                                    </div>                               
+                                </div>
+                                <div class="line-field nesessary clearfix message">
+                                    <label for="user-message">Your message:</label>
+                                    <div class="input-style-wrap2">
+                                        <textarea id="user-message" class="user-message"></textarea>
+                                        <div class="help-block">error</div>
+                                    </div>
+                                    <span class="necessary">*</span>
+                                </div>
+                                <div class="line-field nesessary clearfix field-reviews-verifycode">
+                                    <label for="reviews-verifycode">Image code</label>
+                                    <img id="reviews-verifycode-image" src="/en/frontend/web/site/captcha?v=55112475aae46" alt="">
+                                    <div class="input-style-wrap2">
+                                        <input type="text" id="reviews-verifycode" class="form-control" name="Reviews[verifyCode]">
+                                        <div class="help-block">error</div>
+                                    </div>
+                                </div>
+                                <!-- <div class="agree-block clearfix">
+                                    <label><input type="checkbox"><span></span>I agree to the <a href="#" class="dark-solid-text">terms & conditions</a></label>
+                                </div>
+                                <span class="required-style"><span class="star-style">*</span> — required fields</span>  --> 
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <input class="review-send-btn btn-style clearfix" type="button" value="Send">
+                                <!-- <span><a href="#" class="dark-dashed-text">Log In</a> or <a href="#" class="dark-solid-text">Sign Up</a> to post within your account</span> -->
+                            </div>                                                  
+                        </form>
+                    </div>
+                </div>                                                        
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>      
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>           
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Forex Brokers</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">PayPal Forex Brokers</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">FxGlory</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>

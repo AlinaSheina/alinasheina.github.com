@@ -1,0 +1,49 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+
+<polymer-element name="my-app-bar" attributes="theme home badge">
+  <template>
+    <link rel="stylesheet" href="/app-bar.css">
+    <template if="{{home}}">
+      <content></content>
+    </template>
+    <span class="polymer-status-badge" hidden?="{{!badge.length}}">{{badge}}</span>
+    <div id="search" show?="{{showingSearch}}" on-click="{{toggleSearch}}">
+      <paper-icon-button icon="search"></paper-icon-button>
+      <input type="search" id="input" on-keyup="{{onKeyPress}}" autocomplete="off">
+    </div>
+  </template>
+  <script>
+    Polymer({
+      theme: 'dark',
+      home: false,
+      showingSearch: false,
+      badge: '',
+      toggleSearch: function(e, detail, sender) {
+        if (e) { // comes first
+          e.stopPropagation();
+        }
+        if (e.target === this.$.input) {
+          return;
+        }
+        this.showingSearch = !this.showingSearch;
+        this.classList.toggle('search-on');
+        this.async(function() {
+          this.$.input.focus();
+        });
+      },
+      onKeyPress: function(e, detail, sender) {
+        if (e.keyCode == 13) { // Enter
+          if (sender.value) {
+            recordSearch(sender.value);
+            var q = 'site:polymer-project.org+' + sender.value;
+            window.open('https://www.google.com/search?q=' + q);
+          }
+        }
+      },
+      onMenuClick: function () {
+        this.fire('hamburger-time');
+      }
+    });
+  </script>
+</polymer-element>

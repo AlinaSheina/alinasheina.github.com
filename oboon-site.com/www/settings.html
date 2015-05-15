@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add broker</title>
+<style type="text/css">
+    html, body {
+        height: 100%
+    }
+    .wrapper {
+        background: green;
+        min-height: 100%;
+        opacity: 0;
+    }
+    @-webkit-keyframes translate{
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(200px);
+            -ms-transform: translateY(200px);
+            transform: translateY(200px);
+        }
+        50% { 
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes translate {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(200px);
+            -ms-transform: translateY(200px);
+            transform: translateY(200px);
+        }
+        50% {
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .translate {
+        -webkit-animation-name:translate;
+        animation-name:translate;
+        -webkit-animation-delay: 0.1s;
+        -moz-animation-delay: 0.1s;
+        -o-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper translate">
+        <h1>Settings</h1>
+    </div>    
+</body>
+</html>

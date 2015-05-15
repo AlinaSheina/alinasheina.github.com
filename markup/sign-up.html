@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix">
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="sign-up-content all-border-radius shadow clearfix">
+                    <div class="popup bg-light all-border-radius shadow">
+                        Thank you for creating an account. You will receive a confirmation on your e-mail shortly.
+                        <div class="btns-wrap center clearfix">
+                            <input class="btn-style clearfix" type="button" value="Ok">
+                            <a href="#" class="check-em dark-solid-text">Check e-mail</a>
+                        </div>
+                    </div>
+                    <ul class="toolbar bg-light clearfix">
+                        <li class="tabs active bg-dark-blue">
+                            <a href="#"><span>Sign Up</span></a>
+                        </li> 
+                        <li class="tabs">
+                            <a href="#"><span>Log In</span></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content bg-line">
+                        <form class="sign-up-body clearfix">
+                            <div class="parameter-wrap clearfix">
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-login">Login</label>
+                                    <input id="sign-up-login" type="text">
+                                    <span class="necessary">*</span>
+                                    <span class="input-hint">Min. 4 symbols, without spaces</span>
+                                    <p class="help-block-error">Not enough characters, at least 4 symbols are required.</p>           
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-pass">Password</label>
+                                    <input id="sign-up-pass" type="password">
+                                    <span class="necessary">*</span>
+                                    <span class="input-hint">Min. 6, symbols, only letters and numbers, w/out spaces</span>
+                                    <p class="help-block-error">There’s some incorrect symbols or spaces... please, check spelling.</p>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-pass2">Repeat password</label>
+                                    <input id="sign-up-pass2" type="password">
+                                    <span class="necessary">*</span>
+                                    <p class="help-block-error">This field needs to be filled in.</p>
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-name">Name</label>
+                                    <input id="sign-up-name" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label>Country</label>
+                                    <div class="select-list">
+                                        <select>
+                                            <option selected>South Georgia and the...</option>
+                                            <option>Ukraine</option>
+                                            <option>United States of America</option>
+                                            <option>Uruguai</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-acc-number">Account number<span class="text-icon">#</span></label>
+                                    <div class="help clearfix">
+                                        <input id="sign-up-acc-number" type="text">
+                                        <div class="help-icon click-help">?</div>
+                                        <div class="help-message dropd bg-light">Only first and last symbols of your account number will be shown to other users</div>
+                                    </div>
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-email">E-mail</label>
+                                    <input id="sign-up-email" type="email">
+                                    <span class="necessary">*</span>
+                                    <p class="help-block-error">Doesn’t seem like a legit e-mail address... please, check spelling.</p>
+                                </div>
+                                <div class="line-field clearfix sign-up-phone">
+                                    <label for="sign-up-ph-code-cnt">Phone<span class="text-icon">+</span></label>
+                                    <input id="sign-up-ph-code-cnt" class="sign-up-ph-code-cnt" type="tel" placeholder="380" maxlength="3">
+                                    <input class="sign-up-ph-code" type="tel" placeholder="98" maxlength="2">
+                                    <input class="sign-up-number" type="tel" placeholder="8886493" maxlength="7">
+                                    <span class="necessary phone-necess">*</span>
+                                    <p class="help-block-error">Doesn’t seem like a legit phone number... please, check numbers.</p>
+                                </div>
+                                <div class="agree-block clearfix">
+                                    <label><input type="checkbox"><span></span>I agree to the <a href="#" class="dark-solid-text">terms &amp; conditions</a></label>
+                                </div>
+                                <span class="required-style"><span class="star-style">*</span> — required fields</span>
+                                <div class="text-note all-border-radius">Your real name, country and account number will be shown to other users within your published review. In case of account number — there will be shown only first and last digits.</div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <input class="btn-style clearfix" type="submit" value="Sign Up">
+                            </div>                       
+                        </form>
+                    </div>
+                    <div class="tab-content tab-hide bg-line">
+                        <form class="sign-up-body clearfix">
+                            <div class="parameter-wrap clearfix">
+                                <div class="line-field clearfix">
+                                    <label for="sign-up-log">Login</label>
+                                    <input id="sign-up-log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="sign-log-pass">Password</label>
+                                    <input id="sign-log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <input class="btn-style clearfix" type="submit" value="Log In">
+                            </div>
+                        </form>
+                    </div>
+                </div>            
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>      
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>           
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;→&ensp;</li>
+               <li><a href="#">Sign Up</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>
+

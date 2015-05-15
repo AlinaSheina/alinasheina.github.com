@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pivot points</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>     
+    <script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script> 
+    <script src="js/jquery-ui.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix"> 
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="calculate-wrap-page clearfix">
+                    <div class="articles-info-block bg-dark-blue">
+                        <div class="article-logo">
+                            <img src="img/article.png" alt="article" title="article">
+                        </div>
+                        <div class="article-info">
+                            <h1>Forex calculators</h1>
+                            <p class="text-info">Different forex calculators will help you to generate pivot points for any given time period, find out the value of 1 pip in USD for any lot size and any major or cross currency pair, generate basic Fibonacci retracement values for any given trend, find out the risks and rewards associated with your possible position's targets and many more.</p>
+                        </div>
+                    </div>
+                    <ul class="toolbar bg-light clearfix">
+                        <li class="active bg-dark-blue">
+                            <a href="#"><span>Pivot points</span></a>
+                        </li> 
+                        <li>
+                            <a href="#"><span>Pip value</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Fibonacci</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Position size</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Risk and reward</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Spread betting size</span></a>
+                        </li>
+                    </ul>
+                    <div class="info-wrap bg-line">
+                        <span class="roboto-b">What it’s all about</span>
+                        <p class="text-about">The presented pivot points calculator will generate pivot points in four different systems for you in seconds. Just fill the form below with the previous period's data and press the "Calculate" button.</p>
+                    </div>                       
+                    <form class="calculator all-border-radius shadow">
+                        <div class="line-field clearfix">
+                            <label for="high-price">High price</label><input type="text" id="high-price">
+                        </div>
+                        <div class="line-field clearfix">
+                            <label for="low-price">Low price</label><input type="text" id="low-price">
+                        </div>
+                        <div class="line-field clearfix">
+                            <label for="close-price">Close price</label><input type="text" id="close-price">
+                        </div>
+                        <div class="line-field clearfix">
+                            <label for="open-price">Open price</label><input type="text" id="open-price">
+                        </div>
+                        <span class="text-hint italic">All fields are required (Open price is required only for DeMark’s pivot points)</span>
+                        <div class="calc-btn-wrap">
+                            <div class="calc-btn center">
+                                <input class="btn-style clearfix" type="button" value="CALCULATE">
+                                <a href="#" class="reset-btn dark-dashed-text">Reset</a>
+                            </div>                            
+                        </div>
+                    </form>
+                    <div class="calc-info-block bg-line all-border-radius shadow">
+                        <div class="calc-info-title">
+                           <span class="roboto-b">Know it better — Pivot Point calculator rules</span><br>
+                            <span class="roboto-b">Floor</span> 
+                        </div>                        
+                        <div class="calc-text all-border-radius bg-light">
+                            <div class="inform-text">
+                                <p>The floor pivot points, presented in the first column of the calculation results table, are the most basic and popular type of pivots used in Forex trading technical analysis.</p>
+                                <p>The pivot point is interpreted as the primary support/resistance level — the point at which the main trend will be born. First-third level resistance and support points serve as additional indicators of possible trend reversal or continuation.</p>
+                                <p>The formula to calculate floor pivot points are quite simple.</p>
+                                <p>The pivot point is interpreted as the primary support/resistance level — the point at which the main trend will be born. First-third level resistance and support points serve as additional indicators of possible trend reversal or continuation.</p>
+                            </div>
+                            <div class="show-more-text"><span class="dark-dashed-text">Show more</span></div>                             
+                        </div>
+                    </div>
+                    <table class="table calc-table">
+                        <thead>
+                            <tr class="column-name roboto-b bg-light">
+                                <th style="width: 160px">
+                                    <span>Results</span>
+                                </th>
+                                <th style="width: 135px">
+                                    <span>Floor</span>
+                                </th>
+                                <th style="width: 160px">
+                                    <span>DeMark’s</span>
+                                </th>
+                                <th style="width: 160px">
+                                    <span>Woodie’s</span>
+                                </th>
+                                <th style="width: 165px">
+                                    <span>Camarilla</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tbody-row">
+                                <td>4<sup>th</sup> resistance</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>35.5555</td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td>3<sup>rd</sup> resistance</td>
+                                <td>69.3333</td>
+                                <td></td>
+                                <td></td>
+                                <td>27.2222</td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td>2<sup>nd</sup> resistance</td>
+                                <td>59.6666</td>
+                                <td></td>
+                                <td>57</td>
+                                <td>24.5555</td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td>1<sup>st</sup> resistance</td>
+                                <td>39.3333</td>
+                                <td>49.5</td>
+                                <td>34</td>
+                                <td>21.7777</td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td>Pivot Point</td>
+                                <td>29.6666</td>
+                                <td></td>
+                                <td>27</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">FXDesk</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Forex calculators</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>

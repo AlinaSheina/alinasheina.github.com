@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wallets</title>
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/core-pages/core-pages.html">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<style type="text/css">
+    html, body {
+        height: 100%;
+    }
+    body {
+        margin: 0;
+    }
+    .wrapper {
+        height: 100%;
+    }
+    .transactions-block-wrap {
+        width: 60%;
+        padding: 3px;      
+        float: left;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .transactions-block {
+        background: #1d65c1;
+        height: 100%;
+    }
+    .wallets-list-block-wrap {
+        width: 40%;
+        padding: 3px;       
+        float: left;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .wallets-list-block {
+        background: #1d65c1;
+        height: 100%;
+    }
+    .pink paper-tab::shadow #ink {
+      color: #ff4081;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="transactions-block-wrap">
+            <div class="transactions-block">
+                <paper-tabs class="bottom fit pink" selected="{{selected}}">
+                    <paper-tab>Overview</paper-tab>
+                    <paper-tab>Transactions</paper-tab>
+                    <paper-tab>Deposit</paper-tab>
+                    <paper-tab>Withdraw</paper-tab>
+                    <paper-tab>Send money</paper-tab>
+                    <paper-tab>Report</paper-tab>
+                </paper-tabs>
+                <core-pages selected="0">
+                    <div>Page 1</div>
+                    <div>Page 2</div>
+                    <div>Page 3</div>
+                    <div>Page 4</div>
+                    <div>Page 5</div>
+                    <div>Page 6</div>
+                </core-pages>
+            </div>
+        </div>
+        <div class="wallets-list-block-wrap">
+            <div class="wallets-list-block">
+                
+            </div>
+        </div>
+    </div>    
+</body>
+<script>
+ // document.addEventListener('click', function(e) {
+  //   var pages = document.querySelector('core-pages');
+  //   pages.selected = (pages.selected + 1) % pages.children.length;
+  // });
+</script>
+</html>

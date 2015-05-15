@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>For beginners</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>     
+    <script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script> 
+    <script src="js/jquery-ui.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix"> 
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="all-articles books">
+                    <div class="articles-info-block bg-dark-blue">
+                        <div class="article-logo">
+                            <img src="img/article.png" alt="article" title="article">
+                        </div>
+                        <div class="article-info">
+                            <h1>Forex books</h1>
+                            <p class="text-info">Here you can download forex e-books. The information in these Forex e-books will help you develop your trading skills, money management abilities and the emotional self-control. All are divided into six different sections. Each section is dedicated to its own topic and features the download links to e-books as well as a short description of every book.</p>
+                        </div>
+                    </div>
+                   <div class="toolbar-wrap">
+                        <ul class="toolbar bg-light clearfix" id="toolbar-filtres">
+                            <li>
+                                <a href="#"><span>All books</span></a>
+                            </li> 
+                            <li class="active bg-dark-blue">
+                                <a href="#"><span>For beginners</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Forex market in general</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Money management</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Trading psychology</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Forex strategy</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Advanced forex trading</span></a>
+                            </li>
+                        </ul>
+                        <div class="for-beginners">
+                            <div class="sub-tab-content-wrap">
+                                <form class="toolbar-body bg-light">
+                                    <span>Total articles: 84 </span>
+                                    <span>Sort by</span>
+                                    <div class="select-list">
+                                        <select>
+                                            <option selected>time added</option>
+                                            <option>name</option>
+                                            <option>views</option>
+                                            <option>downloads</option>
+                                        </select> 
+                                    </div>
+                                    <span>show</span>
+                                    <div class="select-list">
+                                        <select>
+                                            <option selected>first</option>
+                                            <option>last</option>
+                                            <option>all</option>
+                                        </select> 
+                                    </div>
+                                    <div class="select-list">
+                                        <select>
+                                            <option selected>5</option>
+                                            <option>10</option>
+                                            <option>20</option>
+                                        </select> 
+                                    </div>
+                                    <button class="btn-style float-right">UPDATE</button>
+                                    <div class="check-period float-right clearfix">
+                                        <div class="sub-tabs">
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="list-type" value="preview" checked>preview</label>
+                                        </div>
+                                        <div class="sub-tabs">
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="list-type" value="preview">list</label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="clearfix">
+                                    <div class="article-prev-cont sub-tab-content">
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>The basics of trading with candlesticks charts.</p>                                        
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">18 Trading Champions Share Their Keys to Top Trading Profits</a>
+                                                    <span class="article-autor">by FWN</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>As the name suggests, the book shares the secrets of the 18 prominent traders with the Forex beginners.</p>                                        
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>The basics of trading with candlesticks charts.</p>                                        
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>The basics of trading with candlesticks charts.</p>
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Introduction to Forex </a>
+                                                    <span class="article-autor">by 1st Forex Trading Academy</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>This trading course intends to provide to all of the students analytical tools on the trading system and methodologies. 
+                                                In this respect, the purpose of the course is to provide an overview of the many strategies that are being used in Forex 
+                                                market and to discuss the steps and tools that are needed in order to use these strategies successfully.</p>
+                                            </div>
+                                            <span class="article-write-data">uploaded at November 05, 2014</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="prev-cont-block-wrap all-border-radius shadow clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Introduction to Forex </a>
+                                                    <span class="article-autor">by 1st Forex Trading Academy</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <div class="article-text bg-light">
+                                                <p>This trading course intends to provide to all of the students analytical tools on the trading system and methodologies. 
+                                                In this respect, the purpose of the course is to provide an overview of the many strategies that are being used in Forex 
+                                                market and to discuss the steps and tools that are needed in order to use these strategies successfully.</p>
+                                            </div>
+                                            <span class="article-write-data">uploaded at November 05, 2014</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="articl-list-cont sub-tab-content tab-hide bg-light all-border-radius shadow">
+                                        <div class="parameter-wrap clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="parameter-wrap clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">18 Trading Champions Share Their Keys to Top Trading Profits</a>
+                                                    <span class="article-autor">by FWN</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="parameter-wrap clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="parameter-wrap clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Candlesticks For Support And Resistance</a>
+                                                    <span class="article-autor">by John H. Forman</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <span class="article-write-data">uploaded at Februrary 17</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="parameter-wrap clearfix">
+                                            <div class="clearfix">
+                                                <div class="article-wrap">
+                                                    <a href="#" class="article-name">Introduction to Forex </a>
+                                                    <span class="article-autor">by 1st Forex Trading Academy</span>
+                                                </div>
+                                                <div class="additional-info">
+                                                    <div class="article-status">...</div>
+                                                    <div class="article-status">Top book</div>
+                                                    <div class="article-status">Recomended</div>
+                                                </div>
+                                            </div>
+                                            <span class="article-write-data">uploaded at November 05, 2014</span>
+                                            <div class="book-btn-wrap">
+                                                <a href="#" class="btn-style">zip</a>
+                                                <a href="#" class="btn-style">pdf</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="load-reviews center">
+                                <a href="#">LOAD MORE ARTICLES</a>
+                                <a href="#toolbar-filtres">FILTERS</a>
+                            </div>
+                        </div>
+                        <div class="sub-tab-content-wrap addit-book-info">
+                            <ul class="toolbar bg-light">
+                                <li class="sub-tabs active bg-dark-blue"><span>Copyright information</span></li>
+                                <li class="sub-tabs"><span>Downloading problems</span></li>
+                                <li class="sub-tabs"><span>For new authors</span></li>
+                            </ul>
+                            <div class="clearfix toolbar-body">
+                                <div class="sub-tab-content">
+                                    If you are the copyright owner of any of these e-books and don't want us to share them, please, <a href="#" class="dark-solid-text">contact us</a> and we will gladly remove them.
+                                </div>
+                                <div class="sub-tab-content tab-hide">Downloading problems</div>
+                                <div class="sub-tab-content tab-hide">For new authors</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">FXDesk</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Forex books</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binary options</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>	   
+    <script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <label><input type="checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix"> 
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="binary-opt">
+                    <div class="brokers-info-block bg-dark-blue">
+                        <div class="payment-logo">
+                            <div class="logo-img-wrap">
+                                <img src="img/binary-opt.png" alt="paypal" title="paypal">
+                            </div>
+                        </div>
+                        <div class="payment-info">
+                            <h1>Binary Options Brokers</h1>
+                            <p class="text-info">A list of Forex brokers that support PayPal payment system as an option for funds deposit/withdrawal. PayPal is a convenient on-line payment system that is widely accepted in the USA, Canada and the United Kingdom. Forex brokers that accept PayPal deposits often are good-standing companies.</p>
+                        </div>
+                    </div>
+                    <div class="search-block all-border-radius bg-light clearfix">
+                        <form class="clearfix">
+                            <input type="text" class="search-line paymen-search-line">
+                            <a href="#" class="btn-style">Search</a>
+                        </form>                   
+                        <div>
+                            <a href="#" class="advanced-srch">
+                                <span class="dark-solid-text">Advanced Search</span>
+                            </a>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr class="column-name bg-light">
+                                <th style="width: 320px">
+                                    <a href="#" class="desc">
+                                        <div class="triggle-up"></div>
+                                        <span>Binary Options Broker</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 65px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Rating</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 75px">
+                                    <a href="#" class="asc">
+                                        <div class="triggle-up"></div>
+                                        <span>Interest Rate, %</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 95px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Bonuses, %</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 75px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Activity</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 105px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Payments, %</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 55px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>US</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>23</td>
+                                <td>14</td>
+                                <td><div class="check"></div></td>
+                                <td>12</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-footer">
+                        <ul class="pagination"><li class="first disabled"><span>First</span></li>
+                            <li class="prev disabled"><span><i class="fa fa-long-arrow-left"></i> Previous</span></li>
+                            <li class="active"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=1" data-page="0">1</a></li>
+                            <li><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=2" data-page="1">2</a></li>
+                            <li><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=3" data-page="2">3</a></li>
+                            <li class="next"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=2" data-page="1">Next <i class="fa fa-long-arrow-right"></i></a></li>
+                            <li class="last"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=3" data-page="2">Last</a></li>                    
+                        </ul>
+                        <a href="#" class="arrow-up"></a>
+                    </div>  
+                </div>
+                              
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>      
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>           
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Binary Options Brokers</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">PayPal Binary Options Brokers</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>

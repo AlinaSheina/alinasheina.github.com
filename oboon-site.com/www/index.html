@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+<script src="bower_components/platform/platform.js"></script>
+<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+<link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
+<link rel="import" href="scaffold.html"> 
+
+    <style>
+        template {display: none !important;} /* injected by platform.js */
+        body {transition: opacity ease-in 0.2s; } 
+        body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+        body {
+        font-family: RobotoDraft, sans-serif;
+        color: #333;
+        margin: 0;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+      }
+      sampler-scaffold {
+        height: 100%;
+      }
+      core-item {
+        cursor: pointer !important;
+      }
+    </style>
+</head>
+	<body fullbleed unresolved touch-action="auto">
+		<my-sampler-scaffold label="Menu" fit="">
+
+      <paper-icon-button class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu"></paper-icon-button>
+    
+      <core-item label="Main" tag="main" url="main-page.html" horizontal="" center="" layout="" class=""></core-item>
+
+      <core-item label="wallets" tag="wallets" url="wallets-page.html" horizontal="" center="" layout=""></core-item>
+
+      <core-item label="Toggle Button" tag="paper-toggle-button" url="draw-pan2.html" horizontal="" center="" layout="" class=""></core-item>  
+       
+    </my-sampler-scaffold>
+	</body>
+</html>

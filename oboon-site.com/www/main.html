@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spread betting size</title>
+    <script src="bower_components/platform/platform.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link href="bower_components/sampler-scaffold/sampler-scaffold.html" rel="import">
+    <link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import">
+    <link href="bower_components/paper-fab/paper-fab.html" rel="import">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <style>
+        template {display: none !important;} /* injected by platform.js */
+        body {transition: opacity ease-in 0.2s; } 
+        body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+        body {
+        font-family: RobotoDraft, sans-serif;
+        color: #333;
+        margin: 0;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+          transform: none;
+          -webkit-transform:none;
+      }
+      
+    </style>
+</head>
+<body>
+<sampler-scaffold label="Привет" fit="">
+
+      <paper-icon-button class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu"></paper-icon-button>
+      <!-- <paper-fab class="sourceButton bottom" icon="launch" role="button" tabindex="0" aria-label="launch"></paper-fab> -->
+    
+      <core-item label="Checkbox" tag="paper-checkbox" url="main2.html" horizontal="" center="" layout="" class=""></core-item>
+
+      <core-item label="Radio Button" tag="paper-radio-button" url="draw-pan2.html" horizontal="" center="" layout="" class=""></core-item>
+
+      <core-item label="Toggle Button" tag="paper-toggle-button" url="calc-spread-size.html" horizontal="" center="" layout="" class=""></core-item>   
+    </sampler-scaffold>
+</body>
+
+<script type="text/javascript">
+
+    setTimeout(function() {
+        $('sampler-scaffold /deep/ core-drawer-panel#drawerPanel').attr('narrow','false')
+    }, 150);
+  
+</script>
+</html>

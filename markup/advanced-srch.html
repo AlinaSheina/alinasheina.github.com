@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advansed search</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>	   
+    <script type="text/javascript" src="js/jquery.custom-scrollbar.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script> 
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-field wrap-width clearfix">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="#"><img src="img/logo.png" alt="logo" title="logo"></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <div class="search-leng-wrap">
+                        <div class="header-search-wrap clearfix">
+                            <input id="header-search" class="search-line" type="text" placeholder="SEARCH">
+                            <input type="image" class="search-line-btn" src="img/search.png" alt="search">
+                        </div>
+                        <div class="leng show-dropd">
+                            <span class="show-leng">en</span>
+                            <ul class="change-leng dropdown-decor dropd">
+                                <li class="clearfix select hidden">
+                                    <a href="#"><span>en</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>ru</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>es</span></a>
+                                </li>
+                                <li class="clearfix select">
+                                    <a href="#"><span>it</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login-block">
+                        <div class="registr">
+                            <a href="#" class="enter-btn">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="#" class="enter-btn">Log In</a>
+                            <form id="login" class="enter-dropdown login-dropdown dropdown-decor">
+                                <div class="line-field clearfix">
+                                    <label for="log">Login</label>
+                                    <input id="log" type="text">
+                                </div>
+                                <div class="line-field clearfix">
+                                    <label for="log-pass">Password</label>
+                                    <input id="log-pass" type="password">
+                                </div>
+                                <div class="clearfix">
+                                    <div class="remember">
+                                        <input type="checkbox" id="login-checkbox" />
+                                        <label for="login-checkbox"><span></span>Remember Me</label>
+                                    </div>
+                                    <a href="#" class="forgot-pass">Forgot Password</a>
+                                </div>
+                                <input class="btn-style clearfix" type="button" value="Log In">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-width clearfix"> 
+            <div>
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+            <main class="main-block clearfix">
+                <div class="advanced-search all-border-radius" id="top-to-search">
+                    <div class="shadow">
+                        <ul class="toolbar bg-light clearfix">
+                           <li class="">
+                                <a href="#"><span>&larr; Back to the rating</span></a>
+                            </li>
+                            <li class="search-tab active bg-dark-blue">
+                                <span>Advanced search</span>
+                            </li>
+                        </ul>
+                        <form class="toolbar-body clearfix">
+                            <div class="parameter-wrap">
+                                <div class="clearfix">
+                                    <div class="rating-block-wrap">
+                                        <span class="search-perameter-title">Rating:</span>
+                                        <div class="rating-block">
+                                            <p>
+                                              <label for="amount">Rated in range from:</label>
+                                              <input type="text" id="amount" readonly>
+                                              <label for="amount2">to:</label>
+                                              <input type="text" id="amount2" readonly>
+                                            </p>
+                                            <div id="slider-range"><div class="ruler"></div></div>
+                                        </div>
+                                        <a href="#" class="reset dark-dashed-text">Reset</a>
+                                    </div>
+                                    <div class="checkbox-param">
+                                        <div class="checkbox-line-wrap clearfix">
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Phone dealing</label>
+                                            </div>
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>US trader</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-line-wrap clearfix">
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Offline seminars</label>
+                                            </div>
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Online vebinars</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-line-wrap clearfix">
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Promotion activities</label>
+                                            </div>
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Live chat</label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-line-wrap clearfix">
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>Trading by phone</label>
+                                            </div>
+                                            <div class="checkbox-line">   
+                                                <label><input type="checkbox"><span></span>PAMM</label>
+                                            </div>
+                                        </div>                                                                        
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="left-sett-block">
+                                        <div class="search-settings">
+                                            <div class="search-sett-line clearfix">
+                                                <span class="broker-block-title">Founded in</span>
+                                                <div class="select-list main-select">
+                                                    <select>
+                                                        <option selected>2015</option>
+                                                        <option>2014</option>
+                                                        <option>2013</option>
+                                                    </select> 
+                                                </div>
+                                                <span>or in a range between</span>
+                                                <div class="select-list between-select">
+                                                    <select>
+                                                        <option selected>—</option>
+                                                        <option>2014</option>
+                                                        <option>2013</option>
+                                                    </select> 
+                                                </div>
+                                                <span>and</span>
+                                                <div class="select-list and-select">
+                                                    <select>
+                                                        <option selected>—</option>
+                                                        <option>2015</option>
+                                                        <option>2014</option>
+                                                    </select> 
+                                                </div>
+                                            </div>
+                                            <div class="search-sett-line clearfix">
+                                                <span class="broker-block-title">Online since</span>
+                                                <div class="select-list main-select">
+                                                    <select name="main-select">
+                                                        <option selected>2015</option>
+                                                        <option>2014</option>
+                                                        <option>2013</option>
+                                                    </select> 
+                                                </div>
+                                                <span>or in a range between</span>
+                                                <div class="select-list between-select">
+                                                    <select name="between">
+                                                        <option selected>—</option>
+                                                        <option>2015</option>
+                                                        <option>2014</option>
+                                                    </select> 
+                                                </div>
+                                                <span>and</span>
+                                                <div class="select-list and-select">
+                                                    <select name="and">
+                                                        <option selected>—</option>
+                                                        <option>2015</option>
+                                                        <option>2013</option>
+                                                    </select> 
+                                                </div>
+                                            </div>
+                                            <div class="search-sett-line clearfix">
+                                                <span class="broker-block-title">Server time zone:</span>
+                                                <div class="select-list">
+                                                    <select>
+                                                        <option>Any</option>
+                                                        <option>GMT</option>
+                                                        <option>GMT+1</option>
+                                                        <option>GMT+2</option>
+                                                        <option>GMT+3</option>
+                                                        <option>GMT+4</option>
+                                                        <option>GMT+5</option>
+                                                        <option>GMT+6</option>
+                                                        <option>GMT+7</option>
+                                                        <option>GMT+8</option>
+                                                        <option>GMT+9</option>
+                                                        <option>GMT+10</option>
+                                                        <option>GMT+11</option>
+                                                        <option selected>GMT+12</option>
+                                                    </select> 
+                                                </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                    <div class="right-sett-block">
+                                        <span class="search-perameter-title">Offices in:</span>
+                                        <div class="search-perameter gray-skin demo scrollable" tabindex="-1">
+                                            <div class="scroll-bar vertical">
+                                                <div class="thumb"></div>
+                                            </div>
+                                            <div class="viewport">
+                                                <div class="overview side-menu-drop">
+                                                    <div class="parameter-line">
+                                                        <label><input type="checkbox"><span></span>Russian Federation</label>
+                                                    </div>
+                                                    <div class="parameter-line">
+                                                        <label><input type="checkbox"><span></span>Cyprus</label>
+                                                    </div>
+                                                    <div class="parameter-line">
+                                                        <label><input type="checkbox"><span></span>Great Britain</label>
+                                                    </div>
+                                                    <div class="parameter-line">
+                                                        <label><input type="checkbox"><span></span>Egypt</label>
+                                                    </div>
+                                                    <div class="parameter-line">
+                                                        <label><input type="checkbox"><span></span>Indonesia</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Regulatory institutions:</span>
+                                    <div class="search-perameter width2 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>CRFIN (Russian Federation)</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>AFM (Netherlands)</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>ASIC</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>BaFin</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Banque de France</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Currencies:</span>
+                                    <div class="search-perameter width2 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Russian Rouble</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>United States Dollar</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Euro</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Great Britain Pound</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Australian Dollar</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Australian Dollar</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Payment options:</span>
+                                    <div class="search-perameter width6 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>PayPal</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Neteller</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>WebMoney</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Skrill (Moneybookers)</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Credit/Debit cards</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Website languages:</span>
+                                    <div class="search-perameter width7 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>English</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Chinese</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Spanish</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>German</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Italian</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Support language:</span>
+                                    <div class="search-perameter width7 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>English</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Chinese</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Spanish</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>German</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Italian</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Trading platforms</span>
+                                    <div class="search-perameter width3 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>PayPal</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>WebMoney</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>MT4</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>MT5</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>ECN</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Demo platforms</span>
+                                    <div class="search-perameter width3 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>PayPal</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>WebMoney</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>MT4</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>MT5</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>ECN</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Mobile OS</span>
+                                    <div class="search-perameter width3 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Android</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>IPhone</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>MIDP</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Palm</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Windows Mobile</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Pricing</span>
+                                    <div class="search-perameter width4 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>No Dealing Desk</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Electronic Commnication Network</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Dealing Desk/Market Maker</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Straight-Through Processing</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Direct Market Access</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Currency pairs:</span>
+                                    <div class="search-perameter curr-pair-wrap width5 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                                <div class="curr-pairs">
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div> /
+                                                    <div class="select-list">
+                                                        <select>
+                                                            <option selected>RUR</option>
+                                                            <option>RUR</option>
+                                                            <option>RUR</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="remove-btn"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-pair"><a href="#" class="dark-dashed-text">+ Pair</a></div>
+                                    </div>
+                                    <a href="#" class="remove-all dark-dashed-text"><div class="remove-btn"></div>Remove all</a>                               
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="analytics-periodicity select-sett-block">
+                                    <div class="select-sett-line clearfix">
+                                        <span class="select-sett-title broker-block-title">Minimal account size:</span>
+                                        <div id="brokerssearch-min_deposit_comparing" class="check-period clearfix">
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="BrokersSearch[min_deposit_comparing]" value="<" checked> &lt;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="BrokersSearch[min_deposit_comparing]" value="<=">&le;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="BrokersSearch[min_deposit_comparing]" value="="> =</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="BrokersSearch[min_deposit_comparing]" value=">=">&ge;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="BrokersSearch[min_deposit_comparing]" value=">"> &gt;</label>
+                                        </div>
+                                        <span class="field-value">$</span><input class="min-size-input" type="text" placeholder="100.000">
+                                    </div>
+                                    <div class="select-sett-line clearfix">
+                                       <span class="select-sett-title broker-block-title">Maximum leverage:</span>
+                                       <div class="check-period clearfix">
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="max-leverage" value="<" checked> &lt;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="max-leverage" value="<=">&le;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="max-leverage" value="="> =</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="max-leverage" value=">=">&ge;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="max-leverage" value=">"> &gt;</label>
+                                        </div>
+                                        <span class="field-value">1:</span><input class="max-lever-input" type="text" placeholder="1.000">
+                                    </div>
+                                    <div class="select-sett-line clearfix">
+                                        <span class="select-sett-title broker-block-title">Minimum position size:</span>
+                                        <div class="check-period clearfix">
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="min-pos-size" value="<" checked> &lt;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="min-pos-size" value="<=">&le;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="min-pos-size" value="="> =</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="min-pos-size" value=">=">&ge;</label>
+                                            <label class="bg-light"><input type="radio" class="radio-input" name="min-pos-size" value=">"> &gt;</label>
+                                        </div>
+                                        <span class="field-value"></span><input class="max-lever-input" type="text" placeholder="1.000"><span class="field-value">lot</span>
+                                    </div>
+                                </div>
+                                <div class="search-perameter-block clearfix">
+                                    <span class="search-perameter-title">Trading Instruments</span>
+                                    <div class="search-perameter width6 gray-skin demo scrollable" tabindex="-1">
+                                        <div class="scroll-bar vertical">
+                                            <div class="thumb"></div>
+                                        </div>
+                                        <div class="viewport">
+                                            <div class="overview side-menu-drop">
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Forex</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Gold & Silver</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>CFD</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Oil</label>
+                                                </div>
+                                                <div class="parameter-line">
+                                                    <label><input type="checkbox"><span></span>Stocks</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="parameter-wrap keywords-wrap clearfix">
+                                <span>Keywords:</span>                            
+                                <input type="text">
+                                <a href="#" class="clear-word dark-dashed-text"><div class="remove-btn"></div>Clear all</a>
+                                <div class="keywords-hint">
+                                    <span>Type words above, separated by commas.</span>
+                                </div>
+                            </div>
+                            <div class="parameter-wrap clearfix">
+                                <div class="footer-block">
+                                    <input class="btn-style clearfix" type="button" value="Search">
+                                    <a href="#" class="footer-reset dark-dashed-text">Reset</a>
+                                    <a href="#" class="arrow-up"></a>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                    <div class="founded-info-block parameter-wrap shadow bg-line all-border-radius clearfix">
+                        <span><span class="roboto-b">Founded:</span> 200 brokers out of 250.</span>
+                        <a href="#top-to-search" class="try-new-param">Try new parameters</a>
+                    </div>
+                    <table class="table shadow">
+                        <thead>
+                            <tr class="column-name bg-light">
+                                <th style="width: 275px">
+                                    <a href="#" class="desc">
+                                        <div class="triggle-up"></div>
+                                        <span>Forex Broker</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 80px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Rating</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 100px">
+                                    <a href="#" class="asc">
+                                        <div class="triggle-up"></div>
+                                        <span>Min. Acc. Size</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 130px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Min. Position Size</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 135px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Max. Leverage</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 110px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>Regulation</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                                <th style="width: 85px">
+                                    <span>Spread</span>
+                                </th>
+                                <th style="width: 65px">
+                                    <a href="#">
+                                        <div class="triggle-up"></div>
+                                        <span>US</span>
+                                        <div class="triggle-down"></div>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGloryFxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="hyphen"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                            <tr class="tbody-row">
+                                <td class="broker-name">
+                                    <img src="img/broker-logo.png" alt="broker-logo" title="broker-logo">
+                                    <a href="#"><span>FxGlory</span></a>
+                                </td>
+                                <td>6.1</td>
+                                <td>$1</td>
+                                <td>0.01</td>
+                                <td>1:3000</td>
+                                <td><div class="check"></div></td>
+                                <td>2</td>
+                                <td><div class="check"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-footer">
+                        <ul class="pagination"><li class="first disabled"><span>First</span></li>
+                            <li class="prev disabled"><span><i class="fa fa-long-arrow-left"></i> Previous</span></li>
+                            <li class="active"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=1" data-page="0">1</a></li>
+                            <li><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=2" data-page="1">2</a></li>
+                            <li><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=3" data-page="2">3</a></li>
+                            <li class="next"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=2" data-page="1">Next <i class="fa fa-long-arrow-right"></i></a></li>
+                            <li class="last"><a href="/en/frontend/web/brokers/index?per-page=2&amp;page=3" data-page="2">Last</a></li>                    
+                        </ul>
+                        <a href="#" class="arrow-up"></a>
+                    </div>                                      
+                </div>
+            </main>
+            <aside class="side-menu-wrap">
+                <ul class="side-menu">
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header active bg-dark-blue">Forex Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd show" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>      
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Binary Options Brokers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                </ul>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Developers</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>           
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">FX Payment Options</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-blue">Forex Info</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">PayPal</a></li>
+                                    <li><a href="#">WebMoney</a></li>
+                                    <li><a href="#">MT4</a></li>
+                                    <li><a href="#">MT5</a></li>
+                                    <li><a href="#">ECN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-menu-item clearfix">
+                        <a href="#" class="side-menu-header bg-dark-grey">FXDesk</a>
+                        <div class="gray-skin demo scrollable menu-dropd" tabindex="-1">
+                            <div class="scroll-bar vertical">
+                                <div class="thumb"></div>
+                            </div>
+                            <div class="viewport">
+                                <ul class="overview side-menu-drop">
+                                    <li class="active-btn"><a href="#">Books</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="small-banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                    <img class="center banner" src="img/banner-115x115.png" alt="banner" title="banner">
+                </div>
+            </aside>
+            <div class="clearfix">
+                <img class="center banner" src="img/banner-728x90.png" alt="banner" title="banner">
+            </div>
+        </div>
+    </div>
+	<footer class="clearfix">
+        <div class="wrap-width">
+            <ul class="f-steps-link clearfix">
+               <li><a href="#">Home</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Forex Brokers</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">PayPal Forex Brokers</a>&ensp;&rarr;&ensp;</li>
+               <li><a href="#">Advanced search</a></li>
+           </ul>
+            <ul class="main-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Risk of Loss</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            <p class="all-right-text">AvalFX.com &copy; 2015 All Rights Reserved</p>
+        </div>
+	</footer>
+</body>
+</html>
