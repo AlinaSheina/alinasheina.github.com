@@ -1,0 +1,37 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	line-height: @line-height-base;
+	color: @text-grey;
+}
+header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: @header-height;
+	background: @gray-light;
+	font-size: @font-size-header;
+}
+footer {
+	height: @footer-height;
+	margin-top: @footer-margin-top;
+	background: @gray-light;
+	padding: 20px 0;
+	box-sizing: border-box;
+	font-size: @font-size-footer;
+}
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}

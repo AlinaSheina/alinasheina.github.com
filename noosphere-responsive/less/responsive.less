@@ -1,0 +1,31 @@
+@media (max-width: 767px), (max-device-width: 767px) {
+	.sitebar-right {
+		display: none;
+	}
+	.sidebar-left {
+		width: 200px;
+	}
+	footer {
+		padding: 12px 0;
+		font-size: floor((@font-size-footer * 0.889)); // ~16px
+	}
+}
+@media (max-width: 479px), (max-device-width: 479px) {
+	.wrapper {
+		padding-bottom: 110px;
+	}
+	.sidebar-left {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-bottom: 20px;
+		.sidebar-left__footer {
+			position: relative;
+			bottom: -10px;
+		}
+	}
+	footer {
+		height: @footer-height + 30px;
+		margin-top: @footer-margin-top - 30px;
+	}
+}
