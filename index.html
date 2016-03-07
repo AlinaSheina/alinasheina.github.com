@@ -12,9 +12,11 @@
 			background-image: url(index-img/bg-img.png);
 			background-repeat: no-repeat;
 			background-size: cover;
+			font-family: "Verdana";
 		}
 		.wrapper {
 			max-width: 960px;
+			min-width: 320px;
 			height: 100%;
 			width: 100%;
 			margin: 0 auto;
@@ -25,13 +27,8 @@
 			margin: 0;
 			padding: 20px 0;
 		}
-		.tile-wrap {
-			display: flex;
-			justify-content: space-around;
-		}
 		.tile {
 			height: 260px;
-			width: 25%;
 			margin: 5px;
 			background: #534451;
 			text-align: center;
@@ -40,11 +37,12 @@
 			text-decoration: none;
 			color: #c7b6c5;
 			border-radius: 2px;
+			display: block;
 		}
 		.tile-title {
 			text-transform: uppercase;					
 		}
-		.logo-wrap{
+		.logo-wrap {
 			background: #fff;
 			border: 5px solid #a1859e;
 			border-radius: 50%;
@@ -63,6 +61,21 @@
 		.logo {
 			max-width: 90%;
 			max-height: 100%;
+		}
+		@media screen and (min-width: 479px) {
+			.tile {
+				width: calc((100% - 20px)/2);
+				float: left;
+			}
+		}
+		@media screen and (min-width: 880px) {
+			.tile-wrap {
+				display: flex;
+				justify-content: space-around;
+			}
+			.tile {
+				width: 25%;
+			}
 		}
 	</style>
 </head>
