@@ -111,18 +111,19 @@ a {
 }
 .start-now-button {
 	background: #8bcd3e;
-	background: linear-gradient(to bottom, #8bcd3e, #8bcd3e);
-	border-radius: 40px;
-	box-shadow: 0 -10px 0px rgba(0, 0, 0, 0.1) inset, 0px 3px 17px 0.00px rgba(28, 52, 0, 0.73);
-	color: #fff;
-	display: block;
-	font-size: 48px;
-	height: 80px;
-	line-height: 70px;
-	margin: 0 auto;
-	text-decoration: none;
-	transition: .1s;
-	width: 320px;
+    background: linear-gradient(to bottom, #8bcd3e, #8bcd3e);
+    border-radius: 40px;
+    box-shadow: 0 -10px 0 rgba(0,0,0,.1) inset,0px 3px 17px 0 rgba(28,52,0,.73);
+    color: #fff;
+    font-size: 48px;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: .1s;
+    display: table;
+    padding: 12px 24px 20px;
+    min-width: 320px;
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
 	&:hover {
 		background-color: #8ad037;
 		background: linear-gradient(to bottom, #8ad037, #a9e267);
@@ -137,16 +138,17 @@ a {
 }
 .fb-button {
 	background: #3a549f;
-	border-radius: 25px;
-	box-sizing: border-box;
-	color: #fff;
-	display: block;
-	font-size: 24px;
-	height: 50px;
-	line-height: 50px;
-	padding-left: 45px;
-	position: relative;width: 275px;
-	text-decoration: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    display: table;
+    font-size: 24px;
+    min-height: 50px;
+    position: relative;
+    text-decoration: none;
+    padding: 12px 15px 12px 60px;
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
 	&:hover {
 		background: #4f6fc1;
 		color: #fff;
@@ -161,8 +163,9 @@ a {
 		height: 46px;
 		left: 2px;
 		position: absolute;
-		top: 2px;
+		top: 50%;
 		width: 46px;
+		margin-top: -23px;
 	}
 }
 .content {

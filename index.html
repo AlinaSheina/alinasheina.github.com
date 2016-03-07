@@ -1,7 +1,122 @@
-<h1> !!!!!</h1>
-<a href="/garden">garden</a>
-<a href="/audiologist">Audiologist</a>
-<a href="/next/index">next</a>
-<a href="/web-coder/test">web-coder</a>
-<a href="/test-owox/test">Owox</a>
-<a href="/Forforce">forforce</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Верстка</title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #665464;
+		}
+		.wrapper {
+			max-width: 960px;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+			margin: 0 auto;
+			color: #fff;
+		}
+		h1 {
+			text-align: center;
+		}
+		.tile-wrap {
+			display: flex;
+			justify-content: space-around;
+		}
+		.tile {
+			height: 260px;
+			width: 25%;
+			margin: 5px;
+			background: #534451;
+			text-align: center;
+			padding: 20px;
+			box-sizing: border-box;
+			text-decoration: none;
+			color: #c7b6c5;
+			border-radius: 2px;
+		}
+		.tile-title {
+			text-transform: uppercase;					
+		}
+		.logo-wrap{
+			background: #fff;
+			border: 5px solid #a1859e;
+			border-radius: 50%;
+			box-shadow: 0 0 2px #fff inset;
+			height: 160px;
+			width: 160px;
+			overflow: hidden;
+			margin: 0 auto 10px;
+			display: table;		
+		}
+		.logo-align {
+			vertical-align: middle;
+			display: table-cell;
+			height: 160px;
+		}
+		.logo {
+			max-width: 90%;
+			max-height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>My works</h1>
+		<div class="tile-wrap">
+			<a href="/garden" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/garden-logo.jpg" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">28 Nov 2013</span>
+			</a>
+			<a href="/audiologist" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/hp-logo.jpg" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">17 Dec 2013</span>
+			</a>
+			<a href="/next/index" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/next-logo.png" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">17 Feb 2015</span>
+			</a>
+			<a href="/web-coder/test" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/web-coder-logo.png" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">17 Feb 2015</span>
+			</a>			
+		</div>
+		<div class="tile-wrap">
+			<a href="/test-owox/test" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/live-link-logo.png" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">27 Jan 2015</span>
+			</a>
+			<a href="/Forforce" class="tile">
+				<div class="logo-wrap">
+					<div class="logo-align">
+						<img src="index-img/feedgee-logo.png" class="logo">
+					</div>
+				</div>
+				<span class="tile-title">5 Feb 2015</span>
+			</a>
+		</div>	
+	</div>
+</body>
+</html>
