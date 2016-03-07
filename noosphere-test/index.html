@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header__main">
+				<div class="width-wrap clearfix">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo" class="logo__img">
+					</div>
+					<div class="header__contacts">
+						<p class="text-style-big">+7(499) 777-77-77</p>
+						<p class="text-style-big">+7(499) 777-77-77</p>
+						<span class="bold feedback js-popup-open" data-popup="feedback">Обратная связь</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<menu>
+			<div class="width-wrap">
+				<ul class="menu clearfix">
+					<li class="menu__item"><a href="#" class="menu__item__link">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__item__link">Каталог</a></li>
+					<li class="menu__item"><a href="#" class="menu__item__link">Доставка и оплата</a></li>
+					<li class="menu__item"><a href="#" class="menu__item__link">Прайс-лист</a></li>
+					<li class="menu__item"><a href="#" class="menu__item__link">Контакты</a></li>
+				</ul>
+			</div>
+		</menu>
+		<div class="slider">
+			<div class="nav-wrap">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="images-wrap">
+				<div class="img-wrap">
+					<img src="img/img0.jpg" alt="img">
+				</div>
+				<div class="img-wrap">
+					<img src="img/img1.png" alt="img">
+				</div>
+				<div class="img-wrap">
+					<img src="img/img2.png" alt="img">
+				</div>
+				<div class="img-wrap">
+					<img src="img/img3.png" alt="img">
+				</div>
+			</div>
+		</div>
+		<div class="width-wrap">
+			<ul class="breadcrumbs clearfix">
+				<li class="breadcr__item">
+					<a href="#" class="breadcr__item__link">Главная</a>
+				</li>
+				<li class="breadcr__item">
+					<a href="#" class="breadcr__item__link">Каталог</a>
+				</li>
+				<li class="breadcr__item">Бытовая техника</li>
+			</ul>
+		</div>
+		<main class="width-wrap clearfix">
+				<div class="content clearfix">
+				<div class="left-block">
+					<ul class="catalog-list">
+						<!-- при клике на пункт каталога открываются подпункты -->
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Автомобили</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">Легковые</a></li>
+								<li><a href="#" class="catalog-list__item__link">Грузовые</a></li>
+							</ul></li>
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Бытовая техника</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">Микроволновки</a></li>
+								<li><a href="#" class="catalog-list__item__link">Холодильники</a></li>
+								<li><a href="#" class="catalog-list__item__link">Посудомоечные машины</a></li>
+								<li><a href="#" class="catalog-list__item__link">Чайники</a></li>
+							</ul>
+						</li>
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Мобильная техника</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">Телефоны</a></li>
+								<li><a href="#" class="catalog-list__item__link">Зарядные устройства</a></li>
+								<li><a href="#" class="catalog-list__item__link">Аксессуары</a></li>
+							</ul>
+						</li>
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Компьютеры</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">ПК</a></li>
+								<li><a href="#" class="catalog-list__item__link">Ноутбуки</a></li>
+							</ul>
+						</li>
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Одежда</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">Женская</a></li>
+								<li><a href="#" class="catalog-list__item__link">Мужская</a></li>
+								<li><a href="#" class="catalog-list__item__link">Детская</a></li>
+							</ul>
+						</li>
+						<li class="catalog-list__item"><a href="#" class="catalog-list__item__link js-subcatalog-open">Недвижимость</a>
+							<ul class="catalog-sublist">
+								<li><a href="#" class="catalog-list__item__link">Дома</a></li>
+								<li><a href="#" class="catalog-list__item__link">Квартиры</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a href="#" class="prise-block">
+						<img src="img/price-icon.png" alt="price-list">
+						<p>Прайс-лист</p>
+					</a>
+				</div>
+				<div class="center-block">
+					<div class="clearfix">
+						<div class="product">
+							<img src="img/foto.png" alt="foto" class="product-img">
+							<p class="product-text">Самый клевый чайник, который надо купить!</p>
+							<div class="product-footer">
+								<span>1 900 p.</span>
+								<a href="#" class="icon-basket"></a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/foto.png" alt="foto" class="product-img">
+							<p class="product-text">Самый клевый чайник, который надо купить!</p>
+							<div class="product-footer">
+								<span>1 900 p.</span>
+								<a href="#" class="icon-basket"></a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/foto.png" alt="foto" class="product-img">
+							<p class="product-text">Самый клевый чайник, который надо купить!</p>
+							<div class="product-footer">
+								<span>1 900 p.</span>
+								<a href="#" class="icon-basket"></a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/foto.png" alt="foto" class="product-img">
+							<p class="product-text">Самый клевый чайник, который надо купить!</p>
+							<div class="product-footer">
+								<span>1 900 p.</span>
+								<a href="#" class="icon-basket"></a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="img/foto.png" alt="foto" class="product-img">
+							<p class="product-text">Самый клевый чайник, который надо купить!</p>
+							<div class="product-footer">
+								<span>1 900 p.</span>
+								<a href="#" class="icon-basket"></a>
+							</div>
+						</div>
+					</div>
+					<ul class="paginator clearfix">
+						<li class="pagin__item"><a href="#" class="pagin__item__link">1</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link">2</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link active-page">3</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link">4</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link">5</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link">6</a></li>
+						<li class="pagin__item"><a href="#" class="pagin__item__link">7</a></li></li>
+					</ul>
+					<!-- В зависимости от того что необходимо реализовать - данный вариант делит текст на 2 колонки с перетиканием, примерно одинакового размера -->
+					<div class="description-column">
+						<p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p><br>
+						<p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+					</div>
+					<!-- Закомментированный вариант, текст находится изначально в разных колонках -->
+					<!-- <div class="description clearfix">
+						<div class="left-col">
+							<p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
+						</div>
+						<div class="right-col">
+							<p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<div class="width-wrap clearfix">
+			<div class="footer-left">
+				<p>© 2012–2013 ЗАО «Компания»</p>
+				<p>info@name.ru</p>
+			</div>
+			<div class="footer-center">
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="#" class="footer-menu__item__link">Главная</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__item__link">Каталог</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__item__link">Доставка и оплата</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__item__link">Прайс-лист</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__item__link">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer-right">
+				<img src="img/company.png" alt="company" class="company-img">
+				<p>Разработка сайта —<br>
+				компания «Пиксель Плюс»</p>
+			</div>
+		</div>
+	</footer>
+	<div class="popup" id="feedback">
+		<div class="backdrop"></div>
+		<form class="popup-body">
+			<div class="close"></div>
+			<p class="popup-title">Обратная связь</p>
+			<label fot="name">Ваше имя *</label>
+			<input type="text" id="name" pattern="[a-zA-Z]+">
+			<label fot="tel">Телефон *</label>
+			<input type="text" id="tel" pattern="(\+?\d[- .]*){7,13}">
+			<label fot="email">Email *</label>
+			<input type="text" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+			<label fot="message">Сообщение</label>
+			<textarea id="message"></textarea>
+			<button class="btn-style" type="submit">Отправить</button>
+		</form>
+	</div>
+</body>
+</html>
