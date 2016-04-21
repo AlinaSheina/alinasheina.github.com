@@ -1,0 +1,9 @@
+default: &default
+  clients:
+    default:
+      database: imagesdb
+      hosts:
+        - localhost:27017
+
+development:
+  <<: *default
