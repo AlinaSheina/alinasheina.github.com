@@ -4,7 +4,7 @@ require 'mongoid'
 
 require 'sinatra-initializers'
 
-get '/new-img' do
+post '/new-img' do
 	param :url,   String, required: true
 	param :task,  String, required: true
 
