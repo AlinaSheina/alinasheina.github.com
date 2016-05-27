@@ -1,0 +1,43 @@
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    font-weight: @headings-font-weight;
+    color: @text-color;
+    line-height: @line-height-base;
+}
+footer {
+  border-top: solid 1px @panel-inner-border;
+  margin: 50px auto 0;
+  max-width: 940px;
+  padding: 20px 0 95px;
+  .logo-bw {
+    float: left;
+  }
+  .footer-text {
+    display: block;
+    font-size: @footer-text;
+    float: right;
+    text-align: right;
+    .text-size {
+      font-size: @footer-text-size;
+      line-height: 45px;
+    }
+  }
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+figure {
+  margin: 0;
+}
+.img-circle {
+  border-radius: 50%;
+}
+[role="button"] {
+  cursor: pointer;
+}

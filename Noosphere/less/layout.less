@@ -1,0 +1,62 @@
+.wrap-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+.content {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.logo {
+    display: table;
+    margin: 0 auto;
+    img {
+        display: table;
+    }
+}
+.color-wrap {
+    background-color: @carousel-background;
+    background: @carousel-gradient;
+    padding: 20px 10px;
+    .join-block {
+        background: #f8f8f8;
+        border-radius: 5px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.45);
+    }
+}
+.user-list {
+    box-sizing: border-box;
+    float: right;
+    padding: 0 0 0 80px;
+    width: 50%;
+    .wrap-user {
+        margin-right: -10px;
+        
+    }
+}
+.column-wrap {
+    -moz-column-count: 3;
+    -o-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -o-column-gap: 20px;
+    column-gap: 20px;
+    line-height: 22px;
+}
+.link-info {
+    display: table;
+    float: right;
+    margin-right: 0px;
+    &:before {
+        background: url('../img/trigon.png') no-repeat;
+        content: " ";
+        float: left;
+        height: 6px;
+        position: relative;
+        right: 7px;
+        top: 8px;
+        width: 6px;
+    }
+}

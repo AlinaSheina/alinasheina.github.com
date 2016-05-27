@@ -1,0 +1,40 @@
+.viewport {
+    overflow: hidden;
+    width: 100%;
+    .viewbox {
+        width: 10000px;
+    }
+}
+.slider-item {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.slider-block {
+    position: relative;
+    .left {
+        display: none;
+        left: -28px;
+    }
+    .right {
+       right: -18px; 
+    }
+    .left, .right {
+        position: absolute;
+        top: 36%;
+        cursor: pointer;
+    }
+    .right:after, .left:before {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        position: relative;  
+    }
+    .right:after {
+        content: url(../img/arrow-right.png);    
+    }
+    .left:before {
+        content: url(../img/arrow-left.png);
+    }
+}

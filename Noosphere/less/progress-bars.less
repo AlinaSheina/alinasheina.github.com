@@ -1,0 +1,32 @@
+.load-line {
+    background: @progress-bg;
+    background: @progress-gradient-bg;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: @progress-border-radius;
+    box-shadow: @progress-box-shadow;
+    color: @progress-bar-color;
+    font-family: verdana;
+    font-size: @progress-font-size;
+    height: @progress-height;
+    line-height: @progress-line-height;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    text-shadow: @progress-text-shadow;
+    width: 100%;
+    .progress-line {
+        background-color: @progress-orange-background;
+        background: @progress-orange-gradient;
+        border-radius: @progress-border-radius;
+        height: 13px;
+        left: 1px;
+        position: relative;
+        top: 2px;
+        width: 0;
+    }
+    span {
+        left: 46%;
+        position: absolute;
+        top: 0;
+    }
+}

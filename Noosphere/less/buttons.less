@@ -1,0 +1,61 @@
+.start-now-button {
+	background: @button-success-background;
+	background: @button-success-background-gradient;
+	border-radius: @button-success-border-radius;
+	box-shadow: @button-success-box-shadow;
+	color: @button-success-color;
+	display: block;
+	font-size: @button-success-font-size;
+	height: @button-success-height;
+	line-height: @button-success-line-height;
+	margin: 0 auto;
+	text-decoration: none;
+	.transition (all .1s ease-in-out);
+	width: @button-success-width;
+	max-width: 100%;
+	&:hover {
+		background-color: @button-success-active-bg;
+		background: linear-gradient(to bottom, @button-success-active-bg, #a9e267);
+		box-shadow: 0 -10px 0px rgba(0, 0, 0, 0.2) inset, 0 6px 17px rgba(0, 0, 0, 0.5);
+		color: @button-success-color;
+		text-decoration: none;
+	}
+	&:active {
+		background-color: @button-success-active-bg;
+		background: linear-gradient(to bottom, #7fcd23, #a7e460);
+		box-shadow: 0 -4px 0px rgba(0, 0, 0, 0.3) inset, 0 3px 6px rgba(0, 0, 0, 0.4);
+	}
+}
+.fb-button {
+	background: @button-info-bg;
+	border-radius: 25px;
+	box-sizing: border-box;
+	color: @button-success-color;
+	display: block;
+	font-size: floor((@button-success-font-size / 2));
+	height: @button-info-height;
+	line-height: @button-info-height;
+	padding-left: 45px;
+	position: relative;
+	width: @button-info-width;
+	text-decoration: none;
+	&:hover {
+		background: #4f6fc1;
+		color: @button-success-color;
+		text-decoration: none;
+	}
+	&:active {
+		background: @button-info-bg;
+		box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
+		text-decoration: none;
+	}
+	.fb-decor {
+		border: 0;
+		display: block;
+		height: 46px;
+		left: 2px;
+		position: absolute;
+		top: 2px;
+		width: 46px;
+	}
+}

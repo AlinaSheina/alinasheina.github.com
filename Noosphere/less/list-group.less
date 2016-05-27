@@ -1,0 +1,15 @@
+.numbered-list {
+    counter-reset: num;
+    list-style-type: none;
+    margin: 0;
+    padding: @list-group-padding;
+    li {
+        padding-bottom: 5px;
+        &:before {
+        content: counter(num) '. ';
+        counter-increment: num;
+        color: @list-group-color;
+        font-size: @list-group-font-size;
+        }
+    }
+}

@@ -1,0 +1,152 @@
+//** Colors.
+
+@gray-base:             #4e4e4e;
+@gray-darker:           #cfcfcf;
+@gray:                  #a3a3a3;
+@gray-light:            #d1d1d1;
+@gray-lighter:          #9a9a9a;
+@white:                 #fff;
+@orange:                #ffb575;
+@orange-base:           #ffc28c;
+
+//** Scaffolding.
+
+@body-bg:               @white;
+@text-color:            @gray-base;
+
+//** Global textual link color.
+@link-color:            @orange;
+@link-hover-color:      darken(@link-color, 15%); // #e66b00
+@link-hover-decoration: underline;
+
+@footer-text:           20px;
+@footer-text-size:      31px;
+@panel-footer-text:     @gray-darker;
+@panel-inner-border:    @gray-darker;
+
+//** Typography.
+
+@font-family-sans-serif:"Source Sans Pro", sans-serif;
+@font-family-base:      @font-family-sans-serif;
+@font-size-base:        14px;
+@font-size-h1:          floor((@font-size-base * 3.15)); // ~44px
+@font-size-h2:          floor((@font-size-base * 2.25)); // ~31px
+
+@line-height-base:      1;
+@line-height-computed:  floor((@font-size-base * @line-height-base)); // ~20px
+
+@headings-font-family:  inherit;
+@headings-font-weight:  300;
+@headings-line-height:  1;
+
+@border-radius-base:    50%;
+
+//** Buttons.
+@button-success-color:                  @white;
+@button-success-font-size:              48px;
+@button-success-background:             rgba(0, 0, 0, 0) ;
+@button-success-background-gradient:    linear-gradient(to bottom, #8bcd3e 0px, #8bcd3e 100%);
+@button-success-border-radius:          40px;
+@button-success-box-shadow:             0 -10px 0 rgba(0, 0, 0, 0.1) inset, 0 3px 17px rgba(0, 0, 0, 0.45);
+@button-success-height:                 80px;
+@button-success-line-height:            70px;
+@button-success-width:                  320px;
+@button-success-active-bg:              #8bcd3e;
+
+@button-info-height:             50px;
+@button-info-bg:                 #3a549f;
+@button-info-width:              275px;
+
+//** Icon
+@icon-height:                    20px;
+@icon-width:                     20px;
+
+
+//** Steps
+@steps-gradient-height:          30px;
+@steps-gradient-width:           100%;
+@steps-gradient-border-radius:   5px;
+
+@steps-gradient-color:           @gray-base;
+@steps-gradient-bg:              linear-gradient(to bottom, @white, #000000);
+
+@steps-default-link-color:       #f1f5f6;
+@steps-default-link-border-color:#9b9b9c;
+@steps-default-link-active-bg:   #ffa20b;
+@steps-default-link-done-bg:     #c6c8c9;
+
+//** Progress bars
+
+@progress-bg:                   #e6e6e6;
+@progress-gradient-bg:          linear-gradient(to bottom, #f5fafb, @progress-bg);
+@progress-bar-color:            @gray-base;
+@progress-border-radius:        3px;
+@progress-box-shadow:           -1px 1px 0 rgba(0, 0, 0, 0.3) inset;
+@progress-orange-background:    rgba(0, 0, 0, 0);
+@progress-orange-gradient:      linear-gradient(to bottom, #ffbb0c, #ff8920);
+
+@progress-text-shadow:          0 1px 1px @white;
+@progress-font-size:            9px;
+@progress-height:               16px;
+@progress-line-height:          15px;
+
+//** Tabs
+
+@tab-toggle-padding:            6px;
+@tab-toggle-height:             16px;
+@tab-toggle-background:         @white;
+@tab-toggle-border-color:       #eeeeee #cccccc @white;
+@tab-toggle-border-radius:      6px 6px 0 0;
+@tab-toggle-border-bottom:      1px solid rgb(238, 238, 238);
+@tab-toggle-color:              #969696;
+@tab-toggle-font-size:          16px;
+
+@tab-active:                    solid 1px @white;
+@tab-active-color:              #ffa352;
+
+@tab-content-border-color:      #eeeeee #cccccc;
+@tab-content-border-radius:     0 6px 6px;
+@tab-content-box-shadow:        0 2px 0 rgba(0, 0, 0, 0.3);
+@tab-content-padding:           20px 14px 20px 14px;
+
+//** List group
+
+@list-group-padding:            25px 0 0;
+@list-group-color:              @gray;
+@list-group-font-size:          11px;
+
+
+//** Thumbnails
+
+@thumbnail-user-box-shadow:          0 0 5px rgba(0,0,0,0.75) inset;
+@thumbnail-user-height:              70px;
+@thumbnail-user-width:               70px;
+@thumbnail-user-background-color:    rgb(150, 150, 150);
+@thumbnail-user-background:          rgba(0, 0, 0, 0.5);
+@thumbnail-user-hover-box-shadow:    7px 7px 15px rgba(0,0,0,0.75);
+@thumbnail-user-color:               @white;
+@thumbnail-user-font-size:           16px;
+@thumbnail-user-font-weight:         200;
+@thumbnail-user-height-hover:        100%;
+
+
+//** Carousel
+
+@carousel-slider-color:               #ff800c;
+@carousel-slider-wrap-width:          50%;
+@carousel-slider-width:               1440px;
+@carousel-join-as-font-size:          24px;
+@carousel-join-padding:               50px 0 25px;
+@carousel-indicator-border-color:     @white;
+@carousel-caption-color:              @white;
+@carousel-gradient:                   linear-gradient(to bottom, #ffbb0c, #ff8920);
+@carousel-background:                 rgba(0, 0, 0, 0);
+
+
+//** Type
+
+@blockquote-color:           @gray-lighter;
+@blockquote-q:               @gray-light;
+@blockquote-font-size:       floor((@font-size-base * 5.14)); // ~72px
+@blockquote-font-weight:     200;
+@line-height-blockquote:     16px;

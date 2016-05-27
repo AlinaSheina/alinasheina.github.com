@@ -1,0 +1,61 @@
+h1 {
+    font-size: @font-size-h1;
+}
+h2 {
+    font-size: @font-size-h2;
+    line-height: @headings-line-height;
+    font-weight: @headings-font-weight;
+    padding: 45px 0 25px;
+}
+a {
+    color: @link-color;
+    text-decoration: @link-hover-decoration;
+      &:hover,
+      &:focus {
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+    }
+}
+.citation {
+    color: @blockquote-color;
+    display: block;
+    font-style: italic;
+    line-height: @line-height-blockquote;
+    padding: 0 20px 0 25px;
+    text-indent: -25px;
+    margin-bottom: 26px;
+    &:before {
+        color: @blockquote-q;
+        content: open-quote;
+        font-size: @blockquote-font-size;
+        font-weight: @blockquote-font-weight;
+        left: -3px;
+        position: relative;
+        text-align: center;
+        top: 35px;
+    }
+    &:after {
+        color: @blockquote-q;
+        content: close-quote;
+        float: right;
+        font-size: @blockquote-font-size;
+        font-weight: @blockquote-font-weight;
+        line-height: 42px;
+        position: relative;
+        right: -15px;
+        text-align: center;
+        top: 10px;
+    }
+}
+.orange-block-text {
+    border-left: 3px solid @orange-base;
+    color: @orange;
+    display: block;
+    line-height: 16px;
+    margin-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 26px;
+}
+.text-pale-grey {
+    color: @panel-footer-text;
+}

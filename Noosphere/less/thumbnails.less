@@ -1,0 +1,38 @@
+.user {
+    box-shadow: @thumbnail-user-box-shadow;
+    float: left;
+    height: @thumbnail-user-height;
+    margin: 0 10px 0 0;
+    position: relative;
+    width: @thumbnail-user-width;
+    .user-img {
+        position: relative;
+        z-index: -2;
+    }
+}
+.user-hover {
+    background-color: @thumbnail-user-background-color;
+    background: @thumbnail-user-background;
+    box-sizing: border-box;
+    color: @thumbnail-user-color;
+    cursor: pointer;
+    font-size: @thumbnail-user-font-size;
+    font-weight: @thumbnail-user-font-weight;
+    height: @thumbnail-user-height-hover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    padding-top: 10px;
+    text-align: center;
+    .transition (all .3s ease-in-out);
+    width: 100%;
+    &:hover {
+        box-shadow: @thumbnail-user-hover-box-shadow;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+    }
+}

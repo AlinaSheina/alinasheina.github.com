@@ -1,0 +1,30 @@
+.icon-wrap {
+	display: table;
+	margin: 10px auto;
+}
+.ico-wink {
+	background: url('../img/ico-wink.png');
+	height: @icon-height;
+	width: @icon-width;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right:5px;
+}
+.ico-add {
+	background: url('../img/ico-add.png');
+	height: @icon-height;
+	width: @icon-width;
+	background-repeat: no-repeat;
+	float: left;
+}
+.ico-wink, .ico-add {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+	padding-top: 5px;
+	&:hover {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	}
+}
