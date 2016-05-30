@@ -41,6 +41,10 @@
 
 @border-radius-base:    50%;
 
+@form-elem-height:          36px;
+@form-elem-line-height:     @form-elem-height;
+@form-elem-border-radius:   20px;
+
 //** Buttons.
 @button-success-color:                  @white;
 @button-success-font-size:              48px;
@@ -136,7 +140,7 @@
 @carousel-slider-wrap-width:          50%;
 @carousel-slider-width:               1440px;
 @carousel-join-as-font-size:          24px;
-@carousel-join-padding:               50px 0 25px;
+@carousel-join-padding:               20px 0 25px 20px;
 @carousel-indicator-border-color:     @white;
 @carousel-caption-color:              @white;
 @carousel-gradient:                   linear-gradient(to bottom, #ffbb0c, #ff8920);
@@ -150,3 +154,29 @@
 @blockquote-font-size:       floor((@font-size-base * 5.14)); // ~72px
 @blockquote-font-weight:     200;
 @line-height-blockquote:     16px;
+
+//** Checked button
+@checked-bg:                      linear-gradient(to bottom, #ff891f, #ffae02);
+@checked-height:                  30px;
+@checked-shadow:                  none;
+
+@checked-label-height:            @form-elem-height;
+@checked-label-size:              inherit;
+@checked-label-line-height:       @checked-label-height;
+@checked-label-shadow:            none;
+@checked-label-border:            none;
+@checked-label-radius:            @form-elem-border-radius;
+@checked-label-radius-first:      20px 0 0 20px;
+@checked-label-radius-last:       0 20px 20px 0;
+@checked-label-color:			  @text-color;			
+
+@checked-label-active-shadow:     none;
+@checked-label-active-color:      black;
+@checked-label-active-bg:         @white;
+
+
+@input-height:                    @form-elem-height;
+@input-line-height:               @form-elem-line-height;
+@input-radius:                    @form-elem-border-radius;
+@input-border:                    1px solid rgba(0,0,0,0.21);
+@input-shadow-inset:              0 1px 3px rgba(0,0,0,0.33) inset;

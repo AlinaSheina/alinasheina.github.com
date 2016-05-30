@@ -1,9 +1,9 @@
 body {
-    font-family: @font-family-base;
-    font-size: @font-size-base;
-    font-weight: @headings-font-weight;
-    color: @text-color;
-    line-height: @line-height-base;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	font-weight: @headings-font-weight;
+	color: @text-color;
+	line-height: @line-height-base;
 }
 footer {
   border-top: solid 1px @panel-inner-border;
@@ -11,27 +11,80 @@ footer {
   max-width: 940px;
   padding: 20px 0 95px;
   .logo-bw {
-    float: left;
+	float: left;
   }
   .footer-text {
-    display: block;
-    font-size: @footer-text;
-    float: right;
-    text-align: right;
-    .text-size {
-      font-size: @footer-text-size;
-      line-height: 45px;
-    }
+	display: block;
+	font-size: @footer-text;
+	float: right;
+	text-align: right;
+	.text-size {
+	  font-size: @footer-text-size;
+	  line-height: 45px;
+	}
   }
 }
-input,
+input[type="text"],
+input[type="password"],
 button,
 select,
 textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  font-size: 18px;
+  color: #666666;
+  &:focus {
+	outline: none;
+  }
 }
+
+input[type="text"],
+input[type="password"],
+select {
+  height: @input-height;
+  line-height: @input-line-height;
+  border-radius: @input-radius;
+  border: @input-border;
+  box-shadow: @input-shadow-inset;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+label input[type='checkbox'] + span {
+  background: url(../img/checkbox-sprite.png);
+  background-position: 0 0;
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  background-size: 14px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+label input[type='checkbox']:checked + span {
+  background-position: 0 15px;
+}
+label input[type='radio'] + span {
+  background: url(../img/radiobuttons-sprite.png);
+  background-position: 0 0;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-size: 15px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+label input[type='radio']:checked + span {
+  background-position: 0 15px;
+}
+
 figure {
   margin: 0;
 }

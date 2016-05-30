@@ -90,4 +90,18 @@ $(function(){
         }
     });
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+
+    function checkValueBtns() {
+        $('.check-value').find('input:checked').closest('.label-wrap').addClass('active-label');
+        $('.check-value .label-wrap').click(function() {
+            if (!$(this).parent().hasClass('disabled')) {
+                $(this).closest('.check-value').find('.label-wrap').removeClass('active-label');
+                $(this).addClass('active-label');
+            } else {
+                return;
+            };
+        });
+    };
+    checkValueBtns();
 });

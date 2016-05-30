@@ -28,3 +28,31 @@
 		-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
 	}
 }
+
+.icon-female,
+.icon-male {
+	height: 30px;
+	width: 24px;
+	display: inline-block;
+	position: relative;
+    top: 3px;
+}
+
+.icon-female {
+	background: url(../img/female.png);
+}
+
+.icon-male {
+	background: url(../img/male.png);
+}
+
+.active-label {
+	.icon-female {
+		background: url(../img/female-active.png);
+		top: 1px;
+	}
+	.icon-male {
+		background: url(../img/male-active.png);
+		top: 1px;
+	}
+}

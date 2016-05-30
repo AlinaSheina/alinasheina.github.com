@@ -1,0 +1,65 @@
+.check-value {
+	display: inline-block;
+    vertical-align: top;
+    box-shadow: @checked-shadow;
+    border-radius: @checked-label-radius;
+    background: @checked-bg;
+    .radio-input {
+        display: none;
+    }
+    .label-wrap { 
+        float: left;
+        height: @checked-label-height;
+        line-height: @checked-label-line-height;
+        cursor: pointer;
+        margin-right: 0px;
+        border-radius: @checked-label-radius;
+        box-shadow: @checked-label-shadow;
+        border: @checked-label-border;
+        font-size: @checked-label-size;
+        margin-left: -1px;
+        a, label {
+            cursor: pointer;
+            padding: 0 11px;
+            line-height: @checked-label-line-height;
+            height: @checked-label-height;
+            display: inline-block;
+            color: @checked-label-color;
+        }
+        &:first-of-type {
+            border-radius: @checked-label-radius-first;
+            padding-left: 3px;
+            label {
+                border-radius: @checked-label-radius-first;
+            }
+        }
+        &:last-of-type {
+            border-radius: @checked-label-radius;
+            padding-right: 2px;
+        }
+        & + .label-wrap {
+            border-radius: 0;
+            &:last-of-type {
+                border-radius: @checked-label-radius-last;
+                label {
+                    border-radius: @checked-label-radius-last;
+                }
+            }
+        }
+    }
+    .active-label {
+        box-shadow: @checked-label-active-shadow;
+        color: @checked-label-active-color;
+        text-shadow: none;
+        height: @checked-label-height - 4px;
+        line-height: @checked-label-line-height - 4px;
+        position: relative;
+        top: 2px;
+        label {
+            background: @checked-label-active-bg;
+            color: @checked-label-active-color;
+            height: @checked-label-height - 4px;
+            line-height: @checked-label-line-height - 4px;
+        }
+    }
+}

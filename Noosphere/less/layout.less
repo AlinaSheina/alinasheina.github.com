@@ -3,6 +3,15 @@
     margin-right: auto;
     max-width: 960px;
 }
+.width-full {
+    width: 100%;
+}
+.disp-flex {
+    display: flex;
+}
+.space-around {
+    justify-content: space-around;
+}
 .content {
     box-sizing: border-box;
     padding: 0 10px;
@@ -58,5 +67,33 @@
         right: 7px;
         top: 8px;
         width: 6px;
+    }
+}
+
+.line-field {
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 18px;
+    .separate-text {
+        padding: 8px 8px 0;
+        display: inline-block;
+    }
+    .field-label {
+        width: 120px;
+        float: left;
+        padding: 0 20px;
+        box-sizing: border-box;
+        padding-top: 8px;
+    }
+
+    .field-value {
+        width: calc(~'100% - 120px');
+        float: left;
+        padding-right: 40px;
+        box-sizing: border-box;
+    }  
+    .field-half {
+        width: 50%;
+        float: left;
     }
 }
