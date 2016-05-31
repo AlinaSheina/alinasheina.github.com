@@ -1,9 +1,48 @@
+@media (max-width: 1300px), (max-device-width: 1300px) {
+    .has-error .error-message {
+        top: 46px;
+        left: 0px;
+        z-index: 1;
+        &:before {
+            top: -4px;
+            left: 20px;
+        }
+    }
+}
+@media (max-width: 1000px), (max-device-width: 1000px) {
+    .user-list {
+        padding: 0 0 0 40px;
+        width: 430px;
+    }
+    .avatar-info {
+        width: calc(~'100% - 430px');
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .line-field {
+        margin-bottom: 8px;
+        .field-label {
+            padding-top: 0;
+        }
+        .field-value {
+            min-width: 320px;
+            padding-left: 8px;
+            padding-left: 10px;
+            width: 100%;
+        }
+    }
+    .start-now-button {
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+        min-width: 260px;
+    }
+}
 @media (max-width: 800px), (max-device-width: 800px) {
     .steps ul li {
         padding-left: 10px;
     }
-}
-@media (max-width: 767px), (max-device-width: 767px) {
     .slider-wrap {
         display: none;
     }
@@ -12,7 +51,9 @@
     }
     .avatar-info {
         width: 100%;
-    }
+    }    
+}
+@media (max-width: 767px), (max-device-width: 767px) {
     .user-list {
         float: left;
         max-width: 390px;
@@ -27,11 +68,29 @@
     }
 }
 @media (max-width: 479px), (max-device-width: 479px) {
+    .line-field {
+        .field-value {
+            min-width: 320px;
+            padding-left: 8px;
+        }
+    }
+    input[type="text"], input[type="password"], button, select, textarea {
+        font-size: 12px;
+    }
+    .check-value .label-wrap a, .check-value .label-wrap label {
+        padding: 0 6px !important;
+    }
     .column-wrap {
         -moz-column-count: 1;
         -o-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
     }
-
+    .has-error .error-message {
+        height: 30px;
+        line-height: 30px;
+    }
+    .tabs .tab-content .right-col {
+        margin-top: 20px;
+    }
 }

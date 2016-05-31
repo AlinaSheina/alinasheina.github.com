@@ -26,9 +26,9 @@
 		<div class="wrap-width join-block clearfix">
 			<div class="slider-wrap">
 				<div class="slider">
-					<!-- <img src="img/slide1.png" alt="slide" title="slide"/>
+					<img src="img/slide1.png" alt="slide" title="slide"/>
 					<img src="img/slide2.png" alt="slide2" title="slide2"/>
-					<img src="img/slide3.png" alt="slide3" title="slide3"/> -->
+					<img src="img/slide3.png" alt="slide3" title="slide3"/>
 				</div>
 			</div>
 			<article class="join-as">
@@ -36,7 +36,7 @@
                 <form>
                     <div class="line-field clearfix">
                         <div class="field-label">I am</div>
-                        <div class="field-value disp-flex space-around">
+                        <div class="field-value disp-flex space-between">
                             <div class="check-value clearfix">
                                 <div class="label-wrap change-control active-label">
                                     <label><input type="radio" class="radio-input" name="sex" value="female" checked=""><i class="icon-female"></i></label>
@@ -45,6 +45,7 @@
                                     <label><input type="radio" class="radio-input" name="sex" value="male"><i class="icon-male"></i></label>
                                 </div>
                             </div>
+                            <img src="img/search.png" alt="search" class="search-img">
                             <span class="separate-text">looking for</span>
                             <div class="check-value clearfix">
                                 <div class="label-wrap change-control">
@@ -59,24 +60,34 @@
                     <div class="line-field clearfix">
                         <label class="field-label" for="name">Name</label>
                         <div class="field-value">
-                           <input type="text" class="width-full" id="name"> 
+                            <div class="has-error">
+                                <input type="text" class="width-full" id="name">
+                                <div class="success-icon"></div>
+                                <div class="error-icon"></div>
+                                <div class="error-message">Enter your name</div>
+                            </div>
                         </div>
                     </div>
                     <div class="line-field clearfix">
                         <div class="field-label">Age</div>
-                        <div class="field-value disp-flex space-around">
-                            <select>
-                                <option>12</option>
-                                <option>13</option>
-                            </select>
-                            <select>
-                                <option>October</option>
-                                <option>November</option>
-                            </select>
-                            <select>
-                                <option>1984</option>
-                                <option>1985</option>
-                            </select>
+                        <div class="field-value">
+                            <div class="success disp-flex space-between">
+                                <select>
+                                    <option>12</option>
+                                    <option>13</option>
+                                </select>
+                                <select>
+                                    <option>October</option>
+                                    <option>November</option>
+                                </select>
+                                <select>
+                                    <option>1984</option>
+                                    <option>1985</option>
+                                </select>
+                                <div class="success-icon"></div>
+                                <div class="error-icon"></div>
+                                <div class="error-message">Error</div>
+                            </div>
                         </div>
                     </div>
                     <div class="line-field clearfix">
@@ -230,11 +241,11 @@
                 <div class="tabs">
                     <ul>
                         <li data-content="tab-content-0" class="tab-toggle active-tab">Users List</li>
-                        <li data-content="tab-content-1" class="tab-toggle">Active list tab | 38</li>
+                        <li data-content="tab-content-1" class="tab-toggle">Active list tab <span class="tab-value">| 38</span></li>
                     </ul>
                     <ul>
                         <li id="tab-content-0" class="tab-content content-active clearfix">
-                            <div>
+                            <div class="left-col">
                                 <div class="load-line">
                                     <div class="progress-line"></div>
                                     <span>0%</span>
@@ -252,13 +263,21 @@
                                 </div>
                                 <div id="slider-range"></div>
                             </div>
-                            <div>
-                                <div class="c100 p55">
-                                    <span>33%</span>
+                            <div class="right-col">
+                                <!-- Вводим значение в файле interface.js, в зивисимости от него зополняется диаграмма, в центр нее вписывается значение, и в зависимости от значения закрашиваются звездочки -->
+                                <div class="c100">
+                                    <span class="value-text"></span>
                                     <div class="slice">
                                         <div class="bar"></div>
                                         <div class="fill"></div>
                                     </div>
+                                </div>
+                                <div class="star-rating clearfix">
+                                    <div class="star-item"></div>
+                                    <div class="star-item"></div>
+                                    <div class="star-item"></div>
+                                    <div class="star-item"></div>
+                                    <div class="star-item"></div>
                                 </div>
                             </div>
                         </li>

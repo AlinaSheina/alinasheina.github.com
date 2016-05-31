@@ -1,6 +1,10 @@
 .start-now-button {
-	background: @button-success-background;
-	background: @button-success-background-gradient;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b9ce44+0,a8c732+10,8eb92a+48,72aa00+48,94c516+98,94c516+98 */
+	background: rgb(185,206,68); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(185,206,68,1) 0%, rgba(168,199,50,1) 10%, rgba(142,185,42,1) 48%, rgba(114,170,0,1) 48%, rgba(148,197,22,1) 98%, rgba(148,197,22,1) 98%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(185,206,68,1) 0%,rgba(168,199,50,1) 10%,rgba(142,185,42,1) 48%,rgba(114,170,0,1) 48%,rgba(148,197,22,1) 98%,rgba(148,197,22,1) 98%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(185,206,68,1) 0%,rgba(168,199,50,1) 10%,rgba(142,185,42,1) 48%,rgba(114,170,0,1) 48%,rgba(148,197,22,1) 98%,rgba(148,197,22,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9ce44', endColorstr='#94c516',GradientType=0 ); /* IE6-9 */
 	border-radius: @button-success-border-radius;
 	box-shadow: @button-success-box-shadow;
 	color: @button-success-color;
@@ -11,51 +15,12 @@
 	margin: 0 auto;
 	text-decoration: none;
 	.transition (all .1s ease-in-out);
-	width: @button-success-width;
 	max-width: 100%;
+	min-width: 320px;
+	border: 1px solid #7fa607;
+	display: table;
 	&:hover {
-		background-color: @button-success-active-bg;
-		background: linear-gradient(to bottom, @button-success-active-bg, #a9e267);
-		box-shadow: 0 -10px 0px rgba(0, 0, 0, 0.2) inset, 0 6px 17px rgba(0, 0, 0, 0.5);
+		text-decoration: none;
 		color: @button-success-color;
-		text-decoration: none;
-	}
-	&:active {
-		background-color: @button-success-active-bg;
-		background: linear-gradient(to bottom, #7fcd23, #a7e460);
-		box-shadow: 0 -4px 0px rgba(0, 0, 0, 0.3) inset, 0 3px 6px rgba(0, 0, 0, 0.4);
-	}
-}
-.fb-button {
-	background: @button-info-bg;
-	border-radius: 25px;
-	box-sizing: border-box;
-	color: @button-success-color;
-	display: block;
-	font-size: floor((@button-success-font-size / 2));
-	height: @button-info-height;
-	line-height: @button-info-height;
-	padding-left: 45px;
-	position: relative;
-	width: @button-info-width;
-	text-decoration: none;
-	&:hover {
-		background: #4f6fc1;
-		color: @button-success-color;
-		text-decoration: none;
-	}
-	&:active {
-		background: @button-info-bg;
-		box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
-		text-decoration: none;
-	}
-	.fb-decor {
-		border: 0;
-		display: block;
-		height: 46px;
-		left: 2px;
-		position: absolute;
-		top: 2px;
-		width: 46px;
 	}
 }

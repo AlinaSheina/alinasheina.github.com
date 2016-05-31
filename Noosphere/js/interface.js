@@ -104,4 +104,27 @@ $(function(){
         });
     };
     checkValueBtns();
+
+    function setDiagramValue () {
+        var valuePersent = 53;
+        $('.c100').addClass('p' + valuePersent);
+        $('.value-text').append(valuePersent + '%');
+
+        if (valuePersent > 20) {
+            $('.star-item').eq(0).addClass('active');
+        }
+        if (valuePersent > 40) {
+            $('.star-item').eq(1).addClass('active');
+        }
+        if (valuePersent > 60) {
+            $('.star-item').eq(2).addClass('active');
+        }
+        if (valuePersent > 80) {
+            $('.star-item').eq(3).addClass('active');
+        }
+        if (valuePersent == 100) {
+            $('.star-item').eq(4).addClass('active');
+        }
+    }
+    setDiagramValue();
 });
