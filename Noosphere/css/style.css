@@ -1,3 +1,11 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 html,
 body,
 div,
@@ -845,11 +853,61 @@ html* .steps ul li {
   color: #a3a3a3;
   font-size: 11px;
 }
+.block-skew-shadow {
+  width: 100%;
+}
+.block-skew-shadow,
+.join-block {
+  position: relative;
+  display: flex;
+}
+.block-skew-shadow:before,
+.join-block:before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 30%;
+  background: #777;
+  bottom: 12px;
+  box-shadow: 0 14px 4px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  max-width: 480px;
+}
+.block-skew-shadow:before {
+  left: 20px;
+  transform: rotate(-3deg) skewX(-50deg);
+}
+.join-block:before {
+  right: 20px;
+  transform: rotate(3deg) skewX(50deg);
+}
 .slider-wrap {
-  float: left;
   overflow: hidden;
   position: relative;
   width: 480px;
+}
+.slider-wrap .pagination-wrap {
+  position: absolute;
+  bottom: 28px;
+  width: 100%;
+}
+.slider-wrap .pagination-wrap .pagination {
+  display: table;
+  margin: auto;
+}
+.slider-wrap .pagination-wrap .pagination .pagination-item {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  margin-right: 8px;
+  float: left;
+}
+.slider-wrap .pagination-wrap .pagination .pagination-item.active {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 7px;
+  height: 7px;
+  background: linear-gradient(to bottom, #ffae02, #ff891f);
 }
 .slider {
   position: relative;
@@ -862,10 +920,10 @@ html* .steps ul li {
 }
 .join-as {
   font-size: 24px;
-  float: right;
   text-align: center;
   width: calc(100% - 480px);
   padding-bottom: 30px;
+  background: #fff;
 }
 .join-as .join-haeder {
   color: #ff800c;

@@ -7,6 +7,9 @@ $(function(){
             $(this).append(first);
             $(this).css({right: '-=' + width});
             carousel();
+            var sliderEq = $('.slider img:first-of-type').attr("data-number");
+            $('.pagination-item').removeClass('active');
+            $('.pagination-item').eq(sliderEq).addClass('active');
         });
     }
     carousel();

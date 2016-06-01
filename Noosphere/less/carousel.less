@@ -1,8 +1,60 @@
+.block-skew-shadow {
+    width: 100%;
+}
+.block-skew-shadow, .join-block {
+    position: relative;
+    display: flex;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 30%;
+        background: #777;
+        bottom: 12px;
+        box-shadow: 0 14px 4px rgba(0, 0, 0, 0.2);
+        z-index: 0;
+        max-width: 480px;
+    }
+}
+.block-skew-shadow {
+    &:before {
+        left: 20px;
+        transform: rotate(-3deg) skewX(-50deg);
+    }    
+}
+.join-block {
+    &:before {
+        right: 20px;
+        transform: rotate(3deg) skewX(50deg);
+    }
+}
 .slider-wrap {
-    float: left;
     overflow: hidden;
     position: relative;
     width: @carousel-slider-wrap-width;
+    .pagination-wrap {
+        position: absolute;
+        bottom: 28px;
+        width: 100%;
+        .pagination {
+            display: table;
+            margin: auto;
+            .pagination-item {
+                height: 11px;
+                width: 11px;
+                border-radius: 50%;
+                background: rgba(0,0,0,0.5);
+                margin-right: 8px;
+                float: left;
+                &.active {
+                    border: 2px solid rgba(0,0,0,0.5);
+                    width: 7px;
+                    height: 7px;
+                    background: linear-gradient(to bottom, #ffae02, #ff891f);
+                }
+            }            
+        }
+    }
 }
 .slider {
     position: relative;
@@ -15,10 +67,10 @@
 }
 .join-as {
     font-size: @carousel-join-as-font-size;
-    float: right;
     text-align: center;
     width: @join-us-width;
     padding-bottom: 30px;
+    background: #fff;
     .join-haeder {
         color: @carousel-slider-color;
         padding: @carousel-join-padding;
