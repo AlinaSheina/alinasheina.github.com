@@ -1,7 +1,11 @@
-.block-skew-shadow {
+.block-skew-shadow, .block-skew-shadow-right {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 320px;
 }
-.block-skew-shadow, .join-block {
+.block-skew-shadow, .block-skew-shadow-right {
     position: relative;
     display: flex;
     &:before {
@@ -22,7 +26,7 @@
         transform: rotate(-3deg) skewX(-50deg);
     }    
 }
-.join-block {
+.block-skew-shadow-right {
     &:before {
         right: 20px;
         transform: rotate(3deg) skewX(50deg);

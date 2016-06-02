@@ -60,7 +60,7 @@ $(function(){
             $('.left').show();
             if (marLeft > - shiftToTheLeft * (sliderNumber - 1) ) {
                 marLeft = marLeft - shiftToTheLeft;
-                if (marLeft == viewportWidth - shiftToTheLeft * (sliderNumber)) {
+                if (marLeft <= viewportWidth - shiftToTheLeft * (sliderNumber)) {
                     $('.right').hide();
                 };
                 $(".viewbox").animate({

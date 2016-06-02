@@ -17,8 +17,14 @@
     .avatar-info {
         width: calc(~'100% - 430px');
     }
+    .slider-wrap {
+        width: 50%;
+    }
+    .join-as {
+        width: 50%;
+    }
     h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
     .line-field {
         margin-bottom: 8px;
@@ -51,7 +57,10 @@
     }
     .avatar-info {
         width: 100%;
-    }    
+    }
+    .check-value .label-wrap a, .check-value .label-wrap label {
+        padding: 0 6px !important;
+    } 
 }
 @media (max-width: 767px), (max-device-width: 767px) {
     .user-list {
@@ -77,8 +86,23 @@
     input[type="text"], input[type="password"], button, select, textarea {
         font-size: 12px;
     }
-    .check-value .label-wrap a, .check-value .label-wrap label {
-        padding: 0 6px !important;
+    .content {
+        padding: 0 10px;
+    }
+    .color-wrap {
+        padding: 20px 0;
+    }
+    .slider-block .left, .slider-block .right {
+        top: 100% !important;
+    }
+    .slider-block .left {
+        left: 10px !important;
+    }
+    .slider-block .right {
+        right: 10px !important;
+    }
+    .user-list .wrap-user {
+        margin-bottom: 20px;
     }
     .column-wrap {
         -moz-column-count: 1;
