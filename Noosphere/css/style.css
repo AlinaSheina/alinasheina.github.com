@@ -924,6 +924,7 @@ html* .steps ul li {
   width: calc(100% - 480px);
   padding-bottom: 30px;
   background: #fff;
+  border-radius: 4px;
 }
 .join-as .join-haeder {
   color: #ff800c;
