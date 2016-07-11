@@ -19,16 +19,19 @@
         z-index: 2;
         border-right: none;
         &:after {
-            content: url(../img/tab-after.png);
+            content: "";
+            background: url(../img/tab-after-sprite.png);
+            background-position: 0 0;
             width: 34px;
-            height: 29px;
+            height: 30px;
             position: absolute;
             top: -1px;
-            right: -31px;
         }
         &.active-tab {
             &:after {
-                content: url(../img/tab-after-active.png);
+                content: "";
+                background: url(../img/tab-after-sprite.png);
+                background-position: 34px 0;
             }
         }
     }

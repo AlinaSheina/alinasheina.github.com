@@ -3,13 +3,14 @@ $(function(){
     function carousel(){
         $('.slider').delay(1000).animate({right: '+=' + width},1000, function(){
             var first = $('.slider img:first-of-type');
+            var paginationItem = $('.pagination-item');
             first.remove();
             $(this).append(first);
             $(this).css({right: '-=' + width});
             carousel();
             var sliderEq = $('.slider img:first-of-type').attr("data-number");
-            $('.pagination-item').removeClass('active');
-            $('.pagination-item').eq(sliderEq).addClass('active');
+            paginationItem.removeClass('active');
+            paginationItem.eq(sliderEq).addClass('active');
         });
     }
     carousel();
@@ -88,12 +89,7 @@ $(function(){
         min: 0,
         max: 100,
         values: [ 30, 70 ],
-        slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
 
     function checkValueBtns() {
         $('.check-value').find('input:checked').closest('.label-wrap').addClass('active-label');
@@ -109,24 +105,26 @@ $(function(){
     checkValueBtns();
 
     function setDiagramValue () {
-        var valuePersent = 53;
+        var valuePersent = 61;
+        var starItem = $('.star-item');
+
         $('.c100').addClass('p' + valuePersent);
         $('.value-text').append(valuePersent + '%');
 
         if (valuePersent > 20) {
-            $('.star-item').eq(0).addClass('active');
+            starItem.eq(0).addClass('active');
         }
         if (valuePersent > 40) {
-            $('.star-item').eq(1).addClass('active');
+            starItem.eq(1).addClass('active');
         }
         if (valuePersent > 60) {
-            $('.star-item').eq(2).addClass('active');
+            starItem.eq(2).addClass('active');
         }
         if (valuePersent > 80) {
-            $('.star-item').eq(3).addClass('active');
+            starItem.eq(3).addClass('active');
         }
         if (valuePersent == 100) {
-            $('.star-item').eq(4).addClass('active');
+            starItem.eq(4).addClass('active');
         }
     }
     setDiagramValue();

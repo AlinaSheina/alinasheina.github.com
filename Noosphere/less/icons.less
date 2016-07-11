@@ -3,7 +3,7 @@
 	margin: 10px auto;
 }
 .ico-wink {
-	background: url('../img/ico-wink.png');
+	background: url(../img/icon-sprite.png);
 	height: @icon-height;
 	width: @icon-width;
 	background-repeat: no-repeat;
@@ -11,7 +11,8 @@
 	margin-right:5px;
 }
 .ico-add {
-	background: url('../img/ico-add.png');
+	background: url(../img/icon-sprite.png);
+	background-position: 0 -20px;
 	height: @icon-height;
 	width: @icon-width;
 	background-repeat: no-repeat;
@@ -21,7 +22,7 @@
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
-	padding-top: 5px;
+	margin-top: 5px;
 	&:hover {
 		opacity: 1;
 		filter: alpha(opacity=100);
@@ -39,20 +40,24 @@
 }
 
 .icon-female {
-	background: url(../img/female.png);
+	background: url(../img/sex-sprite.png);
+	background-position: 0 0;
 }
 
 .icon-male {
-	background: url(../img/male.png);
+	background: url(../img/sex-sprite.png);
+	background-position: 0 30px;
 }
 
 .active-label {
 	.icon-female {
-		background: url(../img/female-active.png);
+		background: url(../img/sex-sprite.png);
+		background-position: 24px 0;
 		top: 1px;
 	}
 	.icon-male {
-		background: url(../img/male-active.png);
+		background: url(../img/sex-sprite.png);
+		background-position: 24px 30px;
 		top: 1px;
 	}
 }
@@ -67,9 +72,10 @@
 }
 
 .error-icon {
-	background: url(../img/check-fail.png);	
+	background: url(../img/check-sprite.png);
+	background-position: 0 20px;
 }
 
 .success-icon {
-	background: url(../img/check.png);	
+	background: url(../img/check-sprite.png);	
 }
