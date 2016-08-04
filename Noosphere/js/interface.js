@@ -1,21 +1,21 @@
 $(function(){
     var width = $('.slider img').width();
+    var sliderBlock = $('.slider');
     function carousel(){
-        $('.slider').delay(1000).animate({right: '+=' + width},1000, function(){
-            var first = $('.slider img:first-of-type');
+        sliderBlock.delay(1000).animate({right: '+=' + width},1000, function(){
+            var first = sliderBlock.find('img:first-of-type');
             var paginationItem = $('.pagination-item');
             first.remove();
             $(this).append(first);
             $(this).css({right: '-=' + width});
             carousel();
-            var sliderEq = $('.slider img:first-of-type').attr("data-number");
+            var sliderEq = sliderBlock.find('img:first-of-type').attr("data-number");
             paginationItem.removeClass('active');
             paginationItem.eq(sliderEq).addClass('active');
         });
     }
     carousel();
- 
-    activeTab();
+    
     function activeTab () {
         $('.active-step').next().click(function(){
             var $this = $(this);
@@ -24,9 +24,10 @@ $(function(){
 
             $this.addClass('active-step');
             $this.prev().addClass('done-step').removeClass('active-step');
-            progressLine ();
+            progressLine();
         });
     }
+    activeTab();
 
     function progressLine () {
         var number=0;
@@ -51,38 +52,36 @@ $(function(){
         $tabs.find(idContent).addClass('content-active');
     });
 
-    function slider() {
-        var viewportWidth = $('.viewport').width();
-        var marLeft = 0;
-        var marRight = 10;
-        var sliderNumber = $('.slider-item').length;
-        var shiftToTheLeft = $('.slider-item').outerWidth() + marRight;
-        $('.right').click(function(){
-            $('.left').show();
-            if (marLeft > - shiftToTheLeft * (sliderNumber - 1) ) {
-                marLeft = marLeft - shiftToTheLeft;
-                if (marLeft <= viewportWidth - shiftToTheLeft * (sliderNumber)) {
-                    $('.right').hide();
-                };
-                $(".viewbox").animate({
-                    marginLeft: + marLeft + 'px',
-                  }, 300);
+    // slider
+    var viewportWidth = $('.viewport').width();
+    var marLeft = 0;
+    var marRight = 10;
+    var sliderNumber = $('.slider-item').length;
+    var shiftToTheLeft = $('.slider-item').outerWidth() + marRight;
+    $('.right').click(function(){
+        $('.left').show();
+        if (marLeft > - shiftToTheLeft * (sliderNumber - 1) ) {
+            marLeft = marLeft - shiftToTheLeft;
+            if (marLeft <= viewportWidth - shiftToTheLeft * (sliderNumber)) {
+                $('.right').hide();
             };
-        });
-        $('.left').click(function(){
-            $('.right').show();
-            if (marLeft < 0) {
-                marLeft = marLeft + shiftToTheLeft;
-                if (marLeft == 0) {
-                    $('.left').hide();
-                }
-                $(".viewbox").animate({
-                    marginLeft: + marLeft + 'px',
-                  }, 300 );
-            };
-        });    
-    };
-    slider();
+            $(".viewbox").animate({
+                marginLeft: + marLeft + 'px',
+              }, 300);
+        };
+    });
+    $('.left').click(function(){
+        $('.right').show();
+        if (marLeft < 0) {
+            marLeft = marLeft + shiftToTheLeft;
+            if (marLeft == 0) {
+                $('.left').hide();
+            }
+            $(".viewbox").animate({
+                marginLeft: + marLeft + 'px',
+              }, 300 );
+        };
+    });    
 
     $( "#slider-range" ).slider({
         range: true,
@@ -91,41 +90,38 @@ $(function(){
         values: [ 30, 70 ],
     });
 
-    function checkValueBtns() {
-        $('.check-value').find('input:checked').closest('.label-wrap').addClass('active-label');
-        $('.check-value .label-wrap').click(function() {
-            if (!$(this).parent().hasClass('disabled')) {
-                $(this).closest('.check-value').find('.label-wrap').removeClass('active-label');
-                $(this).addClass('active-label');
-            } else {
-                return;
-            };
-        });
-    };
-    checkValueBtns();
+    // checkValueBtns
+    var checkValue = $('.check-value');
+    checkValue.find('input:checked').closest('.label-wrap').addClass('active-label');
+    checkValue.find('.label-wrap').click(function() {
+        if (!$(this).parent().hasClass('disabled')) {
+            $(this).closest('.check-value').find('.label-wrap').removeClass('active-label');
+            $(this).addClass('active-label');
+        } else {
+            return;
+        };
+    });
 
-    function setDiagramValue () {
-        var valuePersent = 61;
-        var starItem = $('.star-item');
+    // setDiagramValue
+    var valuePersent = 61;
+    var starItem = $('.star-item');
 
-        $('.c100').addClass('p' + valuePersent);
-        $('.value-text').append(valuePersent + '%');
+    $('.c100').addClass('p' + valuePersent);
+    $('.value-text').append(valuePersent + '%');
 
-        if (valuePersent > 20) {
-            starItem.eq(0).addClass('active');
-        }
-        if (valuePersent > 40) {
-            starItem.eq(1).addClass('active');
-        }
-        if (valuePersent > 60) {
-            starItem.eq(2).addClass('active');
-        }
-        if (valuePersent > 80) {
-            starItem.eq(3).addClass('active');
-        }
-        if (valuePersent == 100) {
-            starItem.eq(4).addClass('active');
-        }
+    if (valuePersent > 20) {
+        starItem.eq(0).addClass('active');
     }
-    setDiagramValue();
+    if (valuePersent > 40) {
+        starItem.eq(1).addClass('active');
+    }
+    if (valuePersent > 60) {
+        starItem.eq(2).addClass('active');
+    }
+    if (valuePersent > 80) {
+        starItem.eq(3).addClass('active');
+    }
+    if (valuePersent == 100) {
+        starItem.eq(4).addClass('active');
+    }
 });
